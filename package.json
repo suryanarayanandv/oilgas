@@ -1,0 +1,13 @@
+{
+  "name": "oilgas-safety-jobs",
+  "private": true,
+  "type": "module",
+  "workspaces": ["fetcher", "web"],
+  "scripts": {
+    "build:companies": "npm run build:companies -w fetcher",
+    "fetch": "npm run fetch -w fetcher --",
+    "test": "npm test -w fetcher",
+    "dev": "npm run dev -w web",
+    "build": "npm run build -w web"
+  }
+}

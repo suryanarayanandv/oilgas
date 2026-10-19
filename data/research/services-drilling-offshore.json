@@ -1,0 +1,928 @@
+[
+  {
+    "id": "slb",
+    "name": "SLB",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.slb.com/job-listing",
+    "ats": {
+      "type": "link-only",
+      "reason": "Job listing is rendered client-side by Coveo Atomic search (org 'schlumberger', searchHub 'CoveoJobsHub...'); requires the short-lived access token embedded in the page's hidden #accessToken input. No public ATS endpoint found."
+    },
+    "verified": "",
+    "notes": "Possible adapter: GET careers.slb.com/job-listing, read hidden inputs #organizationId/#accessToken/#searchHub, then POST https://{org}.org.coveo.com/rest/search/v2 with Bearer token. Not tested. ChampionX (acquired by SLB) still has its own Workday."
+  },
+  {
+    "id": "halliburton",
+    "name": "Halliburton",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://jobs.halliburton.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.halliburton.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SuccessFactors company HALprod. /search/?q=safety returns 25 data-row per page."
+  },
+  {
+    "id": "baker-hughes",
+    "name": "Baker Hughes",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://bakerhughes.wd5.myworkdayjobs.com/BakerHughes",
+    "ats": {
+      "type": "workday",
+      "host": "bakerhughes.wd5.myworkdayjobs.com",
+      "tenant": "bakerhughes",
+      "site": "BakerHughes"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.bakerhughes.com is behind Incapsula bot protection; the Workday API is not."
+  },
+  {
+    "id": "weatherford",
+    "name": "Weatherford",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.weatherford.com",
+    "ats": {
+      "type": "oracle",
+      "host": "fa-exmi-saasfaprod1.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.weatherford.com is an Oracle vanity domain (JS loads CE from the oraclecloud host with header ora-irc-vanity-domain: Y). API returns jobs, but it gave identical results for CX_1/CX_2/CX_1001, so siteNumber is unconfirmed; CX_1 assumed for job URLs."
+  },
+  {
+    "id": "nov",
+    "name": "NOV",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/requisitions",
+    "ats": {
+      "type": "oracle",
+      "host": "egay.fa.us6.oraclecloud.com",
+      "siteNumber": "CX_2001"
+    },
+    "verified": "2026-10-19",
+    "notes": "Oracle API slow (~10-20s); use a 45s timeout."
+  },
+  {
+    "id": "oceaneering",
+    "name": "Oceaneering",
+    "category": "Offshore / Marine",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://ebfr.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
+    "ats": {
+      "type": "oracle",
+      "host": "ebfr.fa.us2.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "championx",
+    "name": "ChampionX (SLB)",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://championx.wd1.myworkdayjobs.com/ChampionX_External",
+    "ats": {
+      "type": "workday",
+      "host": "championx.wd1.myworkdayjobs.com",
+      "tenant": "championx",
+      "site": "ChampionX_External"
+    },
+    "verified": "2026-10-19",
+    "notes": "Acquired by SLB; careers page links to careers.slb.com too."
+  },
+  {
+    "id": "core-laboratories",
+    "name": "Core Laboratories",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://corelab.wd12.myworkdayjobs.com/CLB",
+    "ats": {
+      "type": "workday",
+      "host": "corelab.wd12.myworkdayjobs.com",
+      "tenant": "corelab",
+      "site": "CLB"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "helmerich-payne",
+    "name": "Helmerich & Payne",
+    "category": "Drilling",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://hpinc.wd5.myworkdayjobs.com/hpinc",
+    "ats": {
+      "type": "workday",
+      "host": "hpinc.wd5.myworkdayjobs.com",
+      "tenant": "hpinc",
+      "site": "hpinc"
+    },
+    "verified": "2026-10-19",
+    "notes": "helmerichpayne.com redirects to hpinc.com."
+  },
+  {
+    "id": "emerson",
+    "name": "Emerson",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "ats": {
+      "type": "oracle",
+      "host": "hdjq.fa.us2.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "Company-wide (all Emerson businesses)."
+  },
+  {
+    "id": "honeywell",
+    "name": "Honeywell (Process Solutions / Energy)",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.honeywell.com/en/sites/Honeywell",
+    "ats": {
+      "type": "oracle",
+      "host": "ibqbjb.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.honeywell.com is an Oracle vanity domain. Company-wide; filter for process/energy roles. siteNumber CX_1 taken from favicon URL on the vanity page."
+  },
+  {
+    "id": "siemens-energy",
+    "name": "Siemens Energy",
+    "category": "Oilfield Services",
+    "region": "Europe",
+    "hq": "DE",
+    "careersUrl": "https://jobs.siemens-energy.com/en_US/jobs/Jobs",
+    "ats": {
+      "type": "html",
+      "url": "https://jobs.siemens-energy.com/en_US/jobs/Jobs?search={q}",
+      "linkPattern": "/jobs/FolderDetail/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Avature platform but non-standard: path /en_US/jobs/Jobs and query param 'search' (not SearchJobs?keywords=). Job links: /en_US/jobs/FolderDetail/{slug}/{id}. ?search=safety -> 507 results. Company-wide, not only oil & gas."
+  },
+  {
+    "id": "nabors",
+    "name": "Nabors Industries",
+    "category": "Drilling",
+    "region": "North America",
+    "hq": "BM",
+    "careersUrl": "https://nabors.taleo.net/careersection/100/jobsearch.ftl?lang=en",
+    "ats": {
+      "type": "taleo",
+      "host": "nabors.taleo.net",
+      "section": "100"
+    },
+    "verified": "",
+    "notes": "Taleo portal id 24400022112, needed for REST: POST https://nabors.taleo.net/careersection/rest/jobboard/searchjobs?lang=en&portal=24400022112 (JSON body with fieldData.fields.KEYWORD, pageNo). From curl, pagingData.totalCount is right (9 for 'safety', 13 overall) but requisitionList comes back sparse (0 with a keyword, 1 without). Each item has contestNo, jobId, and column[] = [title, locations JSON string]. jobsearch.ftl HTML has no server-rendered jobs. Not fully working."
+  },
+  {
+    "id": "technipfmc",
+    "name": "TechnipFMC",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://careers.technipfmc.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.technipfmc.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "www.technipfmc.com returns 403 to curl, but the careers.technipfmc.com RMK site works (25 rows for 'safety')."
+  },
+  {
+    "id": "tenaris",
+    "name": "Tenaris",
+    "category": "Oilfield Services",
+    "region": "Europe",
+    "hq": "LU",
+    "careersUrl": "https://recruitment.tenaris.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://recruitment.tenaris.com"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "expro",
+    "name": "Expro",
+    "category": "Oilfield Services",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://career5.successfactors.eu/career?company=EXPROPROD",
+    "ats": {
+      "type": "link-only",
+      "reason": "Classic SuccessFactors career portal (career5.successfactors.eu, company=EXPROPROD) with no RMK/Career Site Builder front end; listings are rendered by JS, and the HTML has no job rows."
+    },
+    "verified": "",
+    "notes": "A classic-SF adapter would need the JS-driven job_listing_summary flow."
+  },
+  {
+    "id": "vallourec",
+    "name": "Vallourec",
+    "category": "Oilfield Services",
+    "region": "Europe",
+    "hq": "FR",
+    "careersUrl": "https://www.vallourec.com/talent-room/join-us/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Classic SuccessFactors career portal (career012.successfactors.eu, company=VALLOUREC) with no RMK site; JS-rendered listings."
+    },
+    "verified": ""
+  },
+  {
+    "id": "patterson-uti",
+    "name": "Patterson-UTI",
+    "category": "Drilling",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://patenergy.com/jobs#en/sites/CX",
+    "ats": {
+      "type": "oracle",
+      "host": "fa-elpm-saasfaprod1.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX"
+    },
+    "verified": "2026-10-19",
+    "notes": "patenergy.com/jobs is an Oracle vanity page; siteNumber 'CX' comes from its hash links. The Oracle API returns the same data for a bogus siteNumber, so the API alone can't validate it."
+  },
+  {
+    "id": "archer",
+    "name": "Archer",
+    "category": "Drilling",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.archerwell.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "archerwell.com returns 403 to curl/WebFetch (bot protection); couldn't identify the underlying ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "oilserv",
+    "name": "Oilserv",
+    "category": "Oilfield Services",
+    "region": "Sub-Saharan Africa",
+    "hq": "NG",
+    "careersUrl": "https://www.oilserv.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "WordPress site with only a generic 'apply for career' form; no job listing or ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "hilong",
+    "name": "Hilong Group",
+    "category": "Oilfield Services",
+    "region": "Asia-Pacific",
+    "hq": "CN",
+    "careersUrl": "https://www.hilonggroup.com/en/join/overseas_job",
+    "ats": {
+      "type": "link-only",
+      "reason": "Custom site; job table is filled by JS (location.href ?aid=...), and the HTML has no job rows."
+    },
+    "verified": ""
+  },
+  {
+    "id": "jereh",
+    "name": "Jereh Group",
+    "category": "Oilfield Services",
+    "region": "Asia-Pacific",
+    "hq": "CN",
+    "careersUrl": "https://www.jereh.com/en/career/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Static careers page with no job listings or ATS links."
+    },
+    "verified": ""
+  },
+  {
+    "id": "anton-oilfield",
+    "name": "Anton Oilfield Services",
+    "category": "Oilfield Services",
+    "region": "Asia-Pacific",
+    "hq": "CN",
+    "careersUrl": "https://wecruit.hotjob.cn/SU6a0683e8f3f38374dad6571d/pb/social.html",
+    "ats": {
+      "type": "link-only",
+      "reason": "Uses the Chinese ATS hotjob.cn (wecruit), JS-rendered and Chinese-language; no supported adapter."
+    },
+    "verified": "",
+    "notes": "Links found on antonoil.com homepage."
+  },
+  {
+    "id": "yokogawa",
+    "name": "Yokogawa",
+    "category": "Oilfield Services",
+    "region": "Asia-Pacific",
+    "hq": "JP",
+    "careersUrl": "https://www.yokogawa.com/about/careers/job-listings/",
+    "ats": {
+      "type": "link-only",
+      "reason": "yokogawa.com serves an AWS WAF JS challenge (HTTP 202) to curl."
+    },
+    "verified": ""
+  },
+  {
+    "id": "abb",
+    "name": "ABB (Energy Industries)",
+    "category": "Oilfield Services",
+    "region": "Europe",
+    "hq": "CH",
+    "careersUrl": "https://careers.abb/global/en/search-results",
+    "ats": {
+      "type": "workday",
+      "host": "abb.wd3.myworkdayjobs.com",
+      "tenant": "abb",
+      "site": "External_Career_Page"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.abb is a Phenom front end; its applyUrl fields point to this Workday site. Company-wide; filter for Energy Industries. The Phenom search-results page also embeds phApp.ddo JSON (eagerLoadRefineSearch.data.jobs) server-side."
+  },
+  {
+    "id": "schneider-electric",
+    "name": "Schneider Electric",
+    "category": "Oilfield Services",
+    "region": "Europe",
+    "hq": "FR",
+    "careersUrl": "https://careers.se.com/jobs",
+    "ats": {
+      "type": "icims",
+      "host": "careers-se.icims.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "IMPORTANT: the iCIMS /jobs/search?in_iframe=1 HTML only returns a JS redirect to careers.se.com. Working endpoint is the iCIMS Jibe API: GET https://careers.se.com/api/jobs?keywords=safety&page=1 -> {totalCount, jobs:[{data:{req_id,title,full_location,posted_date,slug,apply_url}}]}; job URL https://careers.se.com/jobs/{slug}. Suggest a 'jibe' adapter type {host:'careers.se.com'}."
+  },
+  {
+    "id": "transocean",
+    "name": "Transocean",
+    "category": "Drilling",
+    "region": "Europe",
+    "hq": "CH",
+    "careersUrl": "https://deepwater.wd1.myworkdayjobs.com/GlobalExternalCareerSite",
+    "ats": {
+      "type": "workday",
+      "host": "deepwater.wd1.myworkdayjobs.com",
+      "tenant": "deepwater",
+      "site": "GlobalExternalCareerSite"
+    },
+    "verified": "2026-10-19",
+    "notes": "The same tenant has more sites, also verified: NorwayExternalCareerSite and MexicoExternalCareerSite (linked from deepwater.com/careers). Consider fetching all three."
+  },
+  {
+    "id": "valaris",
+    "name": "Valaris",
+    "category": "Drilling",
+    "region": "North America",
+    "hq": "BM",
+    "careersUrl": "https://www.valaris.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "valaris.com sits behind a Cloudflare 'Just a moment' challenge; couldn't identify the underlying ATS (Workday tenant 'valaris' returns 422 on wd1/wd3/wd5)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "noble",
+    "name": "Noble Corporation",
+    "category": "Drilling",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://noblecorp.wd1.myworkdayjobs.com/en-US/noblecorp",
+    "ats": {
+      "type": "workday",
+      "host": "noblecorp.wd1.myworkdayjobs.com",
+      "tenant": "noblecorp",
+      "site": "noblecorp"
+    },
+    "verified": "2026-10-19",
+    "notes": "noblecorp.com returns 403 to curl; the Workday API is fine. Includes ex-Diamond Offshore and Maersk Drilling."
+  },
+  {
+    "id": "seadrill",
+    "name": "Seadrill",
+    "category": "Drilling",
+    "region": "North America",
+    "hq": "BM",
+    "careersUrl": "https://fa-eykz-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/",
+    "ats": {
+      "type": "oracle",
+      "host": "fa-eykz-saasfaprod1.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "Few postings (7 total)."
+  },
+  {
+    "id": "borr-drilling",
+    "name": "Borr Drilling",
+    "category": "Drilling",
+    "region": "Europe",
+    "hq": "BM",
+    "careersUrl": "https://borrdrilling.wd103.myworkdayjobs.com/Borr_Career_Site",
+    "ats": {
+      "type": "workday",
+      "host": "borrdrilling.wd103.myworkdayjobs.com",
+      "tenant": "borrdrilling",
+      "site": "Borr_Career_Site"
+    },
+    "verified": "2026-10-19",
+    "notes": "Pod is wd103 (not wd1-12). Some postings have no locationsText."
+  },
+  {
+    "id": "shelf-drilling",
+    "name": "Shelf Drilling",
+    "category": "Drilling",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://www.shelfdrilling.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Careers page has no job listings or ATS link (privacy notice and contact info only)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "odfjell-drilling",
+    "name": "Odfjell Drilling",
+    "category": "Drilling",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.odfjelldrilling.com/career/job-openings/",
+    "ats": {
+      "type": "html",
+      "url": "https://www.odfjelldrilling.com/career/job-openings/",
+      "linkPattern": "/career/openings/"
+    },
+    "verified": "2026-10-19",
+    "notes": "WordPress list, server-rendered (3 openings seen, with deadlines). No keyword search, so filter client-side. Apply links go to Cornerstone (odfjelldrilling.csod.com)."
+  },
+  {
+    "id": "stena-drilling",
+    "name": "Stena Drilling",
+    "category": "Drilling",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://stena-drilling.recman.page/jobs",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recman (Norwegian ATS); the listing page is a React SPA with no server-rendered jobs. Job detail pages (/job/{id}) do embed JobPosting JSON-LD."
+    },
+    "verified": "",
+    "notes": "Only a 'Register your interest' posting was live when checked."
+  },
+  {
+    "id": "kca-deutag",
+    "name": "KCA Deutag (now H&P)",
+    "category": "Drilling",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.hpinc.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "kcadeutag.com now redirects to hpinc.com (Helmerich & Payne acquired KCA Deutag). Jobs are in the H&P Workday (see helmerich-payne)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "precision-drilling",
+    "name": "Precision Drilling",
+    "category": "Drilling",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://jobs.precisiondrilling.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.precisiondrilling.com"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "sbm-offshore",
+    "name": "SBM Offshore",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NL",
+    "careersUrl": "https://careers.sbmoffshore.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.sbmoffshore.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK: /search/?q=safety gives 20 data-rows. The newer CSB JSON API (/services/recruiting/v1/jobs) returns an error on this site."
+  },
+  {
+    "id": "modec",
+    "name": "MODEC",
+    "category": "Offshore / Marine",
+    "region": "Asia-Pacific",
+    "hq": "JP",
+    "careersUrl": "https://www.modec.com/career/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Breezy HR (white-labelled *.us.careers.hr), split across 16 country portals; no matching schema type. Automatable with a Breezy adapter (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: GET https://{portal}.us.careers.hr/json returns an array of {name, url, published_date, location:{name}}. No keyword param, so filter client-side. Portals with jobs on 2026-10-19: modec-us (6), modec-cn (9), modec-gy (6), modec-sn (5). Others (0 jobs): modec-au, modec-gh, modec-ivc, modec-mukpt, modec-mx, modec-nz, modec-sg, modec-uk, modec-vn, modecsingapore, ofsmalaysia, sofec-sg."
+  },
+  {
+    "id": "yinson",
+    "name": "Yinson",
+    "category": "Offshore / Marine",
+    "region": "Asia-Pacific",
+    "hq": "MY",
+    "careersUrl": "https://careers.yinson.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.yinson.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK (6 rows for 'safety'). Offshore production category: /go/OFFSHORE-PRODUCTION/8960855/."
+  },
+  {
+    "id": "subsea7",
+    "name": "Subsea7",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://careers.subsea7.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.subsea7.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "www.subsea7.com serves a bot 'Challenge Validation' page, but careers.subsea7.com is a classic RMK and works (15 rows for 'safety'). Its job anchors do NOT use class jobTitle-link, so parse tr.data-row and a[href^='/job/']."
+  },
+  {
+    "id": "heerema",
+    "name": "Heerema Marine Contractors",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NL",
+    "careersUrl": "https://careers.heerema.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.heerema.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "NEW-STYLE SuccessFactors CSB: /search/?q= returns 0 data-rows (JS-rendered). Working endpoint: POST https://careers.heerema.com/services/recruiting/v1/jobs, body {\"locale\":\"en_US\",\"pageNumber\":0,\"sortBy\":\"\",\"keywords\":\"safety\",\"location\":\"\",\"facetFilters\":{},\"brand\":\"\",\"skills\":[],\"categoryId\":0,\"alertId\":\"\",\"rcmCandidateId\":\"\"}. Response {totalJobs, jobSearchResult:[{response:{id, unifiedStandardTitle, urlTitle, jobLocationShort[], unifiedStandardStart}}]}. Job URL: https://careers.heerema.com/job/{urlTitle}/{id}-en_US."
+  },
+  {
+    "id": "altera-infrastructure",
+    "name": "Altera Infrastructure",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://alterainfra.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "Next.js page that pulls a Webcruiter feed client-side (module 'WebcruiterFeed'); no server-rendered jobs, and the Webcruiter endpoint wasn't identified."
+    },
+    "verified": ""
+  },
+  {
+    "id": "bw-offshore",
+    "name": "BW Offshore",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://bwoffshore.csod.com/ux/ats/careersite/1/home?c=bwoffshore",
+    "ats": {
+      "type": "link-only",
+      "reason": "Cornerstone OnDemand (csod.com) career site, a JS SPA; its API needs a session token from csod.context in the page. No schema adapter."
+    },
+    "verified": ""
+  },
+  {
+    "id": "allseas",
+    "name": "Allseas",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "CH",
+    "careersUrl": "https://www.allseas.com/en/careers#allseas-vacancy-list",
+    "ats": {
+      "type": "link-only",
+      "reason": "Vacancy list is an empty div (#allseas-vacancy-list) filled by JS; the backend is classic SuccessFactors (career74.sapsf.eu, company=allseasgroD) with no RMK site."
+    },
+    "verified": ""
+  },
+  {
+    "id": "boskalis",
+    "name": "Boskalis",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NL",
+    "careersUrl": "https://careers.boskalis.com/vacancies",
+    "ats": {
+      "type": "link-only",
+      "reason": "Custom site; vacancy cards load via JS/AJAX (only /api/vacancy/get-count shows in the HTML), and ?keywords= returns no server-rendered job links."
+    },
+    "verified": "",
+    "notes": "Facets include /option/organisation/offshore-energy and /option/function/sheq."
+  },
+  {
+    "id": "van-oord",
+    "name": "Van Oord",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NL",
+    "careersUrl": "https://careers.vanoord.com/vacancies",
+    "ats": {
+      "type": "html",
+      "url": "https://careers.vanoord.com/vacancies?o=0&n=100",
+      "linkPattern": "/vacancies/[a-z0-9-]+-\\d+en"
+    },
+    "verified": "2026-10-19",
+    "notes": "Server-rendered list; o=offset, n=page size (n=100 returned 64 unique jobs). No keyword param (search/q/keyword are ignored), so filter client-side. linkPattern is a regex; it excludes /vacancies/favorites."
+  },
+  {
+    "id": "dof",
+    "name": "DOF Group",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.dof.com/vacancies",
+    "ats": {
+      "type": "link-only",
+      "reason": "Workable ATS (account 'dof'); no schema type for Workable. Automatable (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: GET https://apply.workable.com/api/v1/widget/accounts/dof -> {name, jobs:[{title, shortcode, city, country, published_on, url}]} (86 jobs). dof.com/vacancies renders client-side from https://dofsync.curetheheisenbug.com/file.json (84 items: name, country, city, department, url->dof.workable.com). Suggest a 'workable' adapter {account}."
+  },
+  {
+    "id": "bourbon",
+    "name": "Bourbon",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "FR",
+    "careersUrl": "https://bourbon-career.talent-soft.com/job/list-of-jobs.aspx?LCID=2057",
+    "ats": {
+      "type": "html",
+      "url": "https://bourbon-career.talent-soft.com/job/list-of-jobs.aspx?LCID=2057",
+      "linkPattern": "/job/job-"
+    },
+    "verified": "2026-10-19",
+    "notes": "Talentsoft (Cegid) server-rendered list, 10 per page. Job URLs: /job/job-{slug}_{id}.aspx. The keyword param isn't reliable, so filter client-side. LCID=2057 is English."
+  },
+  {
+    "id": "tidewater",
+    "name": "Tidewater",
+    "category": "Offshore / Marine",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.tdw.com/careers/offshore-careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "The careers link on tdw.com returns 404; couldn't identify the ATS (no Workday tenant 'tdw'/'tidewater' on wd1/wd5)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "prosafe",
+    "name": "Prosafe (Atlas Next Wave)",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://atlasnextwave.com/careers/working-at-prosafe/",
+    "ats": {
+      "type": "html",
+      "url": "https://atlasnextwave.com/careers/working-at-prosafe/",
+      "linkPattern": "atlasnextwave.com/job/"
+    },
+    "verified": "2026-10-19",
+    "notes": "prosafe.com/careers points here. WordPress list with 4 jobs (Portuguese titles, Brazil offshore). No search."
+  },
+  {
+    "id": "bristow",
+    "name": "Bristow Group",
+    "category": "Offshore / Marine",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://bristow.wd1.myworkdayjobs.com/Careers",
+    "ats": {
+      "type": "workday",
+      "host": "bristow.wd1.myworkdayjobs.com",
+      "tenant": "bristow",
+      "site": "Careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "Offshore helicopter transport. locationsText is hierarchical, e.g. 'Americas > Brazil > Rio de Janeiro'."
+  },
+  {
+    "id": "oil-states",
+    "name": "Oil States International",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://recruiting2.ultipro.com/OIL1000OIL/JobBoard/db65c907-0c03-4705-9894-b6385fdde36e/",
+    "ats": {
+      "type": "link-only",
+      "reason": "UKG/UltiPro Recruiting job board; no schema type. Automatable (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: POST https://recruiting2.ultipro.com/OIL1000OIL/JobBoard/db65c907-0c03-4705-9894-b6385fdde36e/JobBoardView/LoadSearchResults with JSON {opportunitySearch:{Top,Skip,QueryString,OrderBy:[{Value:'postedDateDesc',PropertyName:'PostedDate',Ascending:false}],Filters:[]},matchCriteria:{PreferredJobs:[],Educations:[],LicenseAndCertifications:[],Skills:[],hasNoLicenses:false,SkippedSkills:[]}} -> {totalCount, opportunities:[{Id, Title, PostedDate, Locations[]}]}. Job URL: {board}/OpportunityDetail?opportunityId={Id}. QueryString seems to match description text as well (37 hits for 'safety'). Suggest an 'ultipro' adapter {host, tenant, boardId}."
+  },
+  {
+    "id": "cactus",
+    "name": "Cactus Inc.",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://recruiting2.ultipro.com/CAC1001CACC/JobBoard/a107cbd1-c097-4da7-a6f4-2a4ab021b86e/",
+    "ats": {
+      "type": "link-only",
+      "reason": "UKG/UltiPro Recruiting; no schema type. Automatable (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: UltiPro LoadSearchResults (same body as oil-states). host recruiting2.ultipro.com, tenant CAC1001CACC, board a107cbd1-c097-4da7-a6f4-2a4ab021b86e; 113 jobs."
+  },
+  {
+    "id": "forum-energy-technologies",
+    "name": "Forum Energy Technologies",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://recruiting.ultipro.com/FOR1013FET/JobBoard/ef7c2aa4-79a3-4d81-8101-e9c85075c8e5",
+    "ats": {
+      "type": "link-only",
+      "reason": "UKG/UltiPro Recruiting; no schema type. Automatable (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: UltiPro LoadSearchResults. host recruiting.ultipro.com (no '2'), tenant FOR1013FET, board ef7c2aa4-79a3-4d81-8101-e9c85075c8e5; 56 jobs. f-e-t.com/careers redirects here."
+  },
+  {
+    "id": "liberty-energy",
+    "name": "Liberty Energy",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://na1.empforce.com/Recruiting/Applicant/JobListings.aspx?Cd=cXSAlMyrKnU%3d",
+    "ats": {
+      "type": "html",
+      "url": "https://na1.empforce.com/Recruiting/Applicant/JobListings.aspx?Cd=cXSAlMyrKnU%3d",
+      "linkPattern": "Job.aspx?Pd="
+    },
+    "verified": "2026-10-19",
+    "notes": "Empforce ATS. Jobs are NOT <a href> links; they're embedded as a JSON string inside the HTML ({\"Data1\":\"[{JobTitle, PostedJobId, Location, PostedOnDate, url:'Job.aspx?Pd=...'}]\"}). Relative URLs resolve against https://na1.empforce.com/Recruiting/Applicant/. No keyword param."
+  },
+  {
+    "id": "helix",
+    "name": "Helix Energy Solutions",
+    "category": "Offshore / Marine",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://phf.tbe.taleo.net/phf01/ats/careers/v2/searchResults?org=HELIXESG&cws=45",
+    "ats": {
+      "type": "html",
+      "url": "https://phf.tbe.taleo.net/phf01/ats/careers/v2/searchResults?org=HELIXESG&cws=45",
+      "linkPattern": "viewRequisition?org=HELIXESG"
+    },
+    "verified": "2026-10-19",
+    "notes": "Taleo BUSINESS Edition (tbe.taleo.net), not Enterprise, so the 'taleo' type doesn't fit. Server-rendered: a.viewJobLink -> viewRequisition?org=HELIXESG&cws=45&rid={id}; 10 per page."
+  },
+  {
+    "id": "deepocean",
+    "name": "DeepOcean",
+    "category": "Offshore / Marine",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.deepoceangroup.com/people/open-positions",
+    "ats": {
+      "type": "link-only",
+      "reason": "HR-Manager (Talentech) ATS; no schema type. Automatable (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: GET https://api.hr-manager.net/jobportal.svc/527004_tr/positionlist/json/ -> {Items:[{Name, WorkPlace, ApplicationDue:'/Date(ms+tz)/', Created, AdvertisementUrl}]} (6 jobs). Suggest an 'hrmanager' adapter {customer:'527004_tr'}."
+  },
+  {
+    "id": "superior-energy",
+    "name": "Superior Energy Services",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://recruiting2.ultipro.com/COM1027SPN/JobBoard/fcff7b7b-9c89-44f1-8187-dfa567a9da9c/",
+    "ats": {
+      "type": "link-only",
+      "reason": "UKG/UltiPro Recruiting; no schema type. Automatable (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: UltiPro LoadSearchResults. host recruiting2.ultipro.com, tenant COM1027SPN, board fcff7b7b-9c89-44f1-8187-dfa567a9da9c; 27 jobs."
+  },
+  {
+    "id": "tetra-technologies",
+    "name": "TETRA Technologies",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://onetetra.com/about-tetra/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "UKG/UltiPro Recruiting; no schema type. Automatable (see notes)."
+    },
+    "verified": "",
+    "notes": "Verified working: UltiPro LoadSearchResults. host recruiting2.ultipro.com, tenant TET1000TETRA, board b9c888fa-45a6-454f-951a-0e24b3db84ef; 24 jobs."
+  },
+  {
+    "id": "rpc",
+    "name": "RPC Inc.",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://rpcinc.wd1.myworkdayjobs.com/RPC",
+    "ats": {
+      "type": "workday",
+      "host": "rpcinc.wd1.myworkdayjobs.com",
+      "tenant": "rpcinc",
+      "site": "RPC"
+    },
+    "verified": "2026-10-19",
+    "notes": "API works, but only one 'RPC General Job Requisition' is posted (searchText 'engineer' gives total 0). Subsidiaries may hire via rpc.hrmdirect.com (that URL 404'd)."
+  },
+  {
+    "id": "tgs",
+    "name": "TGS",
+    "category": "Oilfield Services",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://careers.tgs.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.tgs.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "NEW-STYLE SF CSB: /search/ returns 0 rows. Use POST https://careers.tgs.com/services/recruiting/v1/jobs (same body/response as heerema); 'engineer' -> 5 jobs. Geophysical data (merged with PGS)."
+  },
+  {
+    "id": "select-water",
+    "name": "Select Water Solutions",
+    "category": "Oilfield Services",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://jobs.dayforcehcm.com/en-US/select/CANDIDATEPORTAL",
+    "ats": {
+      "type": "link-only",
+      "reason": "Ceridian Dayforce candidate portal; client-rendered, with no job data in the HTML."
+    },
+    "verified": ""
+  },
+  {
+    "id": "ades",
+    "name": "ADES Holding",
+    "category": "Drilling",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://www.adesholding.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Careers portal is reached only via a shortened link (shorturl.at) and the site is JS-rendered; couldn't confirm an ATS."
+    },
+    "verified": "",
+    "notes": "ADES acquired Shelf Drilling (2025), so Shelf roles may move here."
+  },
+  {
+    "id": "bumi-armada",
+    "name": "Bumi Armada",
+    "category": "Offshore / Marine",
+    "region": "Asia-Pacific",
+    "hq": "MY",
+    "careersUrl": "https://www.bumiarmada.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No online job listing; vacancies are advertised on LinkedIn and job boards with email applications (careers.my@bumiarmada.com)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "nesr",
+    "name": "National Energy Services Reunited (NESR)",
+    "category": "Oilfield Services",
+    "region": "Middle East & North Africa",
+    "hq": "US",
+    "careersUrl": "https://www.nesr.com/careers.html",
+    "ats": {
+      "type": "link-only",
+      "reason": "Static careers page with a generic CV form (#apply_form_box); no job listings or ATS."
+    },
+    "verified": "",
+    "notes": "Operations are MENA-focused, though the legal HQ is in Houston."
+  }
+]

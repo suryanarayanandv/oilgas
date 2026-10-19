@@ -1,0 +1,930 @@
+[
+  {
+    "id": "adnoc",
+    "name": "ADNOC (Group HQ)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en"
+    },
+    "verified": "2026-10-19",
+    "notes": "Phenom People portal for whole ADNOC group (~100 jobs). Without companyName filter returns all subsidiaries; companyName facet values seen: ADNOC HQ, ADNOC Offshore, ADNOC Onshore, ADNOC GAS O&M, ADNOC Sour Gas, ADNOC Drilling, ADNOC Distribution, ADNOC Logistics & Services, Al Dhafra Petroleum, Al Yasat. Search-results HTML page also embeds the same JSON in phApp.ddo.eagerLoadRefineSearch. Phenom refNum=AGLAGPAE."
+  },
+  {
+    "id": "adnoc-offshore",
+    "name": "ADNOC Offshore",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC Offshore"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC Offshore\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}."
+  },
+  {
+    "id": "adnoc-onshore",
+    "name": "ADNOC Onshore",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC Onshore"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC Onshore\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}."
+  },
+  {
+    "id": "adnoc-gas",
+    "name": "ADNOC Gas",
+    "category": "LNG / Midstream",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC GAS O&M"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC GAS O&M\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}. Facet value is 'ADNOC GAS O&M'; 'ADNOC Sour Gas' (Shah) is separate."
+  },
+  {
+    "id": "adnoc-sour-gas",
+    "name": "ADNOC Sour Gas",
+    "category": "LNG / Midstream",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC Sour Gas"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC Sour Gas\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}."
+  },
+  {
+    "id": "adnoc-drilling",
+    "name": "ADNOC Drilling",
+    "category": "Drilling",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC Drilling"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC Drilling\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}."
+  },
+  {
+    "id": "adnoc-distribution",
+    "name": "ADNOC Distribution",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC Distribution"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC Distribution\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}. Mostly retail/fuel-station roles."
+  },
+  {
+    "id": "adnoc-ls",
+    "name": "ADNOC Logistics & Services",
+    "category": "Offshore / Marine",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC Logistics & Services"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC Logistics & Services\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}."
+  },
+  {
+    "id": "al-dhafra-petroleum",
+    "name": "Al Dhafra Petroleum",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "Al Dhafra Petroleum"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"Al Dhafra Petroleum\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}."
+  },
+  {
+    "id": "al-yasat",
+    "name": "Al Yasat Petroleum",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "Al Yasat"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"Al Yasat\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}."
+  },
+  {
+    "id": "adnoc-refining",
+    "name": "ADNOC Refining",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://jobs.adnoc.ae/us/en",
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC Refining"
+    },
+    "verified": "2026-10-19",
+    "notes": "Shared ADNOC group Phenom People portal. POST https://jobs.adnoc.ae/widgets (ddoKey refineSearch, refNum AGLAGPAE) with selected_fields.companyName=[\"ADNOC Refining\"] filters to this company; job URL https://jobs.adnoc.ae/us/en/job/{jobId}. No 'ADNOC Refining' facet value had open jobs on 2026-10-19; exact facet string unconfirmed - may appear as 'ADNOC Refining' when roles open. Filter client-side on companyName containing 'Refining'."
+  },
+  {
+    "id": "borouge",
+    "name": "Borouge",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://careers.borouge.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.borouge.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK; only 1 job open at check time. Keyword search seemed to return all jobs when result set tiny."
+  },
+  {
+    "id": "saudi-aramco",
+    "name": "Saudi Aramco",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://careers.aramco.com",
+    "ats": {
+      "type": "link-only",
+      "reason": "careers.aramco.com and aramco.com time out / reset connection for curl and WebFetch (bot protection or geo-filtering); ATS could not be confirmed."
+    },
+    "verified": "",
+    "notes": "Unreachable from our network; retry from a browser."
+  },
+  {
+    "id": "satorp",
+    "name": "SATORP (Saudi Aramco Total Refining and Petrochemical)",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://career-sa20.hr.cloud.sap/career?company=SATORPPROD",
+    "ats": {
+      "type": "successfactors-classic",
+      "host": "career-sa20.hr.cloud.sap",
+      "company": "SATORPPROD"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic SuccessFactors career portal (not RMK). Feed: GET https://career-sa20.hr.cloud.sap/career?company=SATORPPROD&career_ns=job_listing_summary&resultType=XML -> <Job-Listing><Job><JobTitle/><Job-Description/><ReqId/>... (no keyword param; filter client-side). Job URL: https://career-sa20.hr.cloud.sap/career?company=SATORPPROD&career_ns=job_listing&career_job_req_id={ReqId}. 11 jobs at check."
+  },
+  {
+    "id": "luberef",
+    "name": "Luberef (Saudi Aramco Base Oil Company)",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://careers.luberef.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.luberef.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK site; TLS certificate was EXPIRED on 2026-10-19 (adapter needs to tolerate/skip cert verification for this host). 0 open jobs at check time, page structure confirmed."
+  },
+  {
+    "id": "qatarenergy",
+    "name": "QatarEnergy",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "QA",
+    "careersUrl": "https://careerportal.qatarenergy.qa/jobs",
+    "ats": {
+      "type": "icims",
+      "host": "careerportal.qatarenergy.qa"
+    },
+    "verified": "",
+    "notes": "NOT the classic iCIMS HTML endpoint: careerportal.qatarenergy.qa is an iCIMS Jibe front-end. Classic URL experienced-professionals-recruitment-qatarenergy.icims.com/jobs/search?...&in_iframe=1 just JS-redirects here. Working JSON API (verified 2026-10-19): GET https://careerportal.qatarenergy.qa/api/jobs?keywords=safety&page=1&limit=10 -> {totalCount, count, jobs:[{data:{req_id, slug, title, city, country, posted_date, apply_url, categories[], description}}]}; job URL https://careerportal.qatarenergy.qa/jobs/{slug}. 76 hits for 'safety'. 'verified' left blank because the schema's icims adapter endpoint will not work for this host."
+  },
+  {
+    "id": "qatarenergy-lng",
+    "name": "QatarEnergy LNG",
+    "category": "LNG / Midstream",
+    "region": "GCC",
+    "hq": "QA",
+    "careersUrl": "https://careers.qatarenergylng.qa",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.qatarenergylng.qa"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK (backed by career5.successfactors.eu company=QELNGP; classic XML feed also works)."
+  },
+  {
+    "id": "north-oil-company",
+    "name": "North Oil Company (Qatar)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "QA",
+    "careersUrl": "https://careers.noc.qa",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.noc.qa"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK. Operator of Al-Shaheen field (QatarEnergy/TotalEnergies JV)."
+  },
+  {
+    "id": "dolphin-energy",
+    "name": "Dolphin Energy",
+    "category": "LNG / Midstream",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://career5.successfactors.eu/career?company=dolphinene",
+    "ats": {
+      "type": "successfactors-classic",
+      "host": "career5.successfactors.eu",
+      "company": "dolphinene"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic SuccessFactors portal (no RMK site). XML feed: GET https://{host}/career?company={company}&career_ns=job_listing_summary&resultType=XML; job URL https://{host}/career?company={company}&career_ns=job_listing&career_job_req_id={ReqId}. Only 1 posting (Qatari applicants) at check time. HQ Abu Dhabi, operations Ras Laffan."
+  },
+  {
+    "id": "gulf-drilling-international",
+    "name": "Gulf Drilling International (GDI)",
+    "category": "Drilling",
+    "region": "GCC",
+    "hq": "QA",
+    "careersUrl": "https://ekif.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/GDICareers",
+    "ats": {
+      "type": "oracle",
+      "host": "ekif.fa.em2.oraclecloud.com",
+      "siteNumber": "GDICareers"
+    },
+    "verified": "2026-10-19",
+    "notes": "Oracle siteNumber is a name, not CX_n."
+  },
+  {
+    "id": "nakilat",
+    "name": "Nakilat (Qatar Gas Transport Co)",
+    "category": "Offshore / Marine",
+    "region": "GCC",
+    "hq": "QA",
+    "careersUrl": "https://careers.nakilat.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.nakilat.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK. www.nakilat.com serves brotli-only responses; the careers subdomain is fine."
+  },
+  {
+    "id": "q-chem",
+    "name": "Qatar Chemical Company (Q-Chem)",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "QA",
+    "careersUrl": "https://career2.successfactors.eu/career?company=qatarchemi",
+    "ats": {
+      "type": "successfactors-classic",
+      "host": "career2.successfactors.eu",
+      "company": "qatarchemi"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic SuccessFactors portal (no RMK site). XML feed: GET https://{host}/career?company={company}&career_ns=job_listing_summary&resultType=XML; job URL https://{host}/career?company={company}&career_ns=job_listing&career_job_req_id={ReqId}. 8 postings at check."
+  },
+  {
+    "id": "oryx-gtl",
+    "name": "Oryx GTL",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "QA",
+    "careersUrl": "https://careers.oryxgtl.com.qa",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.oryxgtl.com.qa"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK but uses the TILE layout: anchor class is 'jobTitle-link fontcolor...' with data-focus-tile attr and the title text is NOT directly inside the <a>; parse href /job/{slug}/{id}/ and title from tile."
+  },
+  {
+    "id": "kpc",
+    "name": "Kuwait Petroleum Corporation (KPC)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "KW",
+    "careersUrl": "https://recruitment.kpc.com.kw/recruitment2/",
+    "ats": {
+      "type": "link-only",
+      "reason": "KPC group unified recruitment system (ASP.NET) requires an applicant account/login to view vacancies."
+    },
+    "verified": ""
+  },
+  {
+    "id": "koc",
+    "name": "Kuwait Oil Company (KOC)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "KW",
+    "careersUrl": "https://www.kockw.com/sites/EN/Pages/Join%20Us/Join-Us.aspx",
+    "ats": {
+      "type": "link-only",
+      "reason": "No public job listing; KPC-group hiring goes through the login-walled KPC recruitment portal (recruitment.kpc.com.kw)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "knpc",
+    "name": "Kuwait National Petroleum Company (KNPC)",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "KW",
+    "careersUrl": "https://recruitment.kpc.com.kw/recruitment2/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No public careers listing on knpc.com; hiring via login-walled KPC recruitment portal."
+    },
+    "verified": ""
+  },
+  {
+    "id": "kipic",
+    "name": "Kuwait Integrated Petroleum Industries Co (KIPIC)",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "KW",
+    "careersUrl": "https://recruitment.kpc.com.kw/recruitment2/",
+    "ats": {
+      "type": "link-only",
+      "reason": "kipic.com.kw redirects to knpc.com (merged into KNPC); hiring via login-walled KPC recruitment portal."
+    },
+    "verified": ""
+  },
+  {
+    "id": "oq",
+    "name": "OQ (Oman)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://careers.oq.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.oq.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK. Covers OQ group incl. OQ8 Duqm refinery category."
+  },
+  {
+    "id": "oq8",
+    "name": "OQ8 (Duqm Refinery & Petrochemical)",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://careers.oq.com/go/Duqm-Refinery-&-Petrochem/9161201/",
+    "ats": {
+      "type": "html",
+      "url": "https://careers.oq.com/go/Duqm-Refinery-&-Petrochem/9161201/",
+      "linkPattern": "/job/"
+    },
+    "verified": "2026-10-19",
+    "notes": "OQ8 jobs are a category ('/go/' page) on the OQ SF RMK site; same table markup as RMK search. 0 jobs at check time (page structure confirmed). Dedupe against 'oq'."
+  },
+  {
+    "id": "pdo",
+    "name": "Petroleum Development Oman (PDO)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://www.pdo.co.om/en/Pages/CreatingValue/WorkingatPDO.aspx",
+    "ats": {
+      "type": "link-only",
+      "reason": "No online job board on pdo.co.om; Omani-national vacancies announced via Ministry of Labour / Kawader platform (kwader.mem.gov.om) and press."
+    },
+    "verified": ""
+  },
+  {
+    "id": "daleel-petroleum",
+    "name": "Daleel Petroleum",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://daleelpetroleum.com/people/vacancies",
+    "ats": {
+      "type": "link-only",
+      "reason": "Vacancies page links out to the Ministry of Energy & Minerals 'Kawader' platform (kwader.mem.gov.om) - no own job list."
+    },
+    "verified": ""
+  },
+  {
+    "id": "ara-petroleum",
+    "name": "ARA Petroleum",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://arapetroleum.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "WordPress info page only; no job listings or ATS (contact by email)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "oman-lng",
+    "name": "Oman LNG",
+    "category": "LNG / Midstream",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://www.omanlng.com/Careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "www.omanlng.com refuses TLS handshake from non-browser clients; omanlng.co.om returns 401. ATS unknown."
+    },
+    "verified": ""
+  },
+  {
+    "id": "bapco-energies",
+    "name": "Bapco Energies",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "BH",
+    "careersUrl": "https://www.bapcoenergies.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "Radware Bot Manager (validate.perfdrive.com) captcha redirect on all requests."
+    },
+    "verified": "",
+    "notes": "Covers Bapco Refining, Bapco Upstream (ex-Tatweer), Banagas etc."
+  },
+  {
+    "id": "tatweer-petroleum",
+    "name": "Tatweer Petroleum (Bapco Upstream)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "BH",
+    "careersUrl": "https://www.bapcoenergies.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "tatweerpetroleum.com fails TLS; Tatweer is now part of Bapco Energies whose careers page is behind Radware bot protection."
+    },
+    "verified": ""
+  },
+  {
+    "id": "enoc",
+    "name": "ENOC (Emirates National Oil Company)",
+    "category": "NOC",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://careers.enoc.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.enoc.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK (career22.sapsf.com). www.enoc.com itself returns 403 to curl but careers.enoc.com works."
+  },
+  {
+    "id": "dragon-oil",
+    "name": "Dragon Oil",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://career22.sapsf.com/career?company=dragonoilh",
+    "ats": {
+      "type": "successfactors-classic",
+      "host": "career22.sapsf.com",
+      "company": "dragonoilh"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic SuccessFactors portal (no RMK site). XML feed: GET https://{host}/career?company={company}&career_ns=job_listing_summary&resultType=XML; job URL https://{host}/career?company={company}&career_ns=job_listing&career_job_req_id={ReqId}. ENOC subsidiary. Feed returned empty <Job-Listing/> (0 jobs) at check time; endpoint confirmed."
+  },
+  {
+    "id": "dana-gas",
+    "name": "Dana Gas",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://www.danagas.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "Imperva/Incapsula bot challenge on all danagas.com pages."
+    },
+    "verified": ""
+  },
+  {
+    "id": "crescent-petroleum",
+    "name": "Crescent Petroleum",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://careers.crescent.ae/CrescentPetroleum/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.crescent.ae/CrescentPetroleum"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK multi-brand site: baseUrl has a brand path. Job hrefs are host-relative and already include the brand ('/CrescentPetroleum/job/...'), so job URL = origin + href (NOT baseUrl + href). Operates in KRI (Pearl Petroleum) and UAE."
+  },
+  {
+    "id": "nmdc-energy",
+    "name": "NMDC Energy (ex-NPCC)",
+    "category": "EPC / Engineering",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://fa-evft-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001",
+    "ats": {
+      "type": "oracle",
+      "host": "fa-evft-saasfaprod1.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX_1001"
+    },
+    "verified": "2026-10-19",
+    "notes": "Oracle on the newer '*.fa.ocs.oraclecloud.com' host pattern (port 443 in link). Site appears shared across NMDC Group (marine dredging + energy); 101 'engineer' hits incl. marine crew roles - filter on title."
+  },
+  {
+    "id": "kent",
+    "name": "Kent",
+    "category": "EPC / Engineering",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://kentplc.com/careers",
+    "ats": {
+      "type": "html",
+      "url": "https://kentplc.com/careers",
+      "linkPattern": "kentplc.com/careers/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Custom (Craft CMS) list page with ALL ~150 jobs in one server-rendered HTML page; ?keyword= param is ignored server-side, so filter titles client-side. Job links are absolute https://kentplc.com/careers/{slug}; exclude non-job slugs like 'early-careers'. Global jobs (Middle East, Canada, Australia, UK). HQ country unconfirmed."
+  },
+  {
+    "id": "ccc",
+    "name": "Consolidated Contractors Company (CCC)",
+    "category": "EPC / Engineering",
+    "region": "Middle East & North Africa",
+    "hq": "GR",
+    "careersUrl": "https://www.ccc.net/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No job list - only a general CV-upload form (WPForms) by area of interest."
+    },
+    "verified": "",
+    "notes": "HQ Athens; major Gulf/MENA EPC employer."
+  },
+  {
+    "id": "ades",
+    "name": "ADES Holding",
+    "category": "Drilling",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://epgv.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "ats": {
+      "type": "oracle",
+      "host": "epgv.fa.em3.oraclecloud.com",
+      "siteNumber": "CX_2001"
+    },
+    "verified": "2026-10-19",
+    "notes": "Jobs across Saudi, Qatar, Kuwait, Egypt, Algeria."
+  },
+  {
+    "id": "arabian-drilling",
+    "name": "Arabian Drilling Company",
+    "category": "Drilling",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://jobs.arabdrill.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.arabdrill.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK. Many postings are 'Talent Pool' evergreen reqs."
+  },
+  {
+    "id": "taqa-ies",
+    "name": "TAQA (Industrialization & Energy Services Co)",
+    "category": "Oilfield Services",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://careers.tq.com/go/Current-Openings/8818101",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.tq.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK. TLS certificate on careers.tq.com EXPIRED (notAfter 2026-06-08, GoDaddy) - adapter must allow insecure TLS for this host. Global jobs (Saudi, UAE, Oman, India, Canada)."
+  },
+  {
+    "id": "nesr",
+    "name": "National Energy Services Reunited (NESR)",
+    "category": "Oilfield Services",
+    "region": "Middle East & North Africa",
+    "hq": "US",
+    "careersUrl": "https://www.nesr.com/careers.html",
+    "ats": {
+      "type": "link-only",
+      "reason": "Static careers page with testimonials only; no job list or ATS link (info@ email)."
+    },
+    "verified": "",
+    "notes": "MENA-focused OFS; listed HQ Houston but operations HQ in Dubai."
+  },
+  {
+    "id": "galfar",
+    "name": "Galfar Engineering & Contracting",
+    "category": "EPC / Engineering",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://www.galfaremirates.com/careers.php",
+    "ats": {
+      "type": "link-only",
+      "reason": "Galfar Emirates careers page asks for CVs by email (jobs@galfaremirates.com); Galfar Oman by email (teamhr@galfar.com). No ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "sabic",
+    "name": "SABIC",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://jobs.sabic.com",
+    "ats": {
+      "type": "link-only",
+      "reason": "SF RMK site using the new 'unified' tile search: /search/?q= HTML has no rows (results rendered by React widget) and POST /services/recruiting/v1/jobs returned {\"totalJobs\":0} for all queries. Could not extract jobs."
+    },
+    "verified": "",
+    "notes": "If adapter supports SF 'unified' search, try POST https://jobs.sabic.com/services/recruiting/v1/jobs body {keywords,locale:'en_US',location:'',pageNumber:0,sortBy:'recent'}."
+  },
+  {
+    "id": "basrah-gas",
+    "name": "Basrah Gas Company",
+    "category": "LNG / Midstream",
+    "region": "Middle East & North Africa",
+    "hq": "IQ",
+    "careersUrl": "https://www.basrahgas.com/our-company/#our-people",
+    "ats": {
+      "type": "link-only",
+      "reason": "No careers section or job listings on basrahgas.com (WordPress site; no ATS link found)."
+    },
+    "verified": "",
+    "notes": "Shell/South Gas/Mitsubishi JV; Shell's own careers site sometimes lists BGC secondments."
+  },
+  {
+    "id": "mellitah-oil-gas",
+    "name": "Mellitah Oil & Gas",
+    "category": "NOC",
+    "region": "Middle East & North Africa",
+    "hq": "LY",
+    "careersUrl": "https://mellitahog.ly/%d9%88%d8%b8%d8%a7%d8%a6%d9%81/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Jobs page (Arabic) links to a Microsoft Forms application form; no listings."
+    },
+    "verified": "",
+    "notes": "NOC Libya / Eni JV."
+  },
+  {
+    "id": "sonatrach",
+    "name": "Sonatrach",
+    "category": "NOC",
+    "region": "Middle East & North Africa",
+    "hq": "DZ",
+    "careersUrl": "https://nationalrecruit.sonatrach.dz/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recruitment is via periodic national competitions on nationalrecruit.sonatrach.dz (unreachable from our network) and the ANEM national employment agency; no standing job board."
+    },
+    "verified": ""
+  },
+  {
+    "id": "mubadala-energy",
+    "name": "Mubadala Energy",
+    "category": "Independent E&P",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://www.careers-page.com/mubadalaenergy",
+    "ats": {
+      "type": "html",
+      "url": "https://www.careers-page.com/mubadalaenergy",
+      "linkPattern": "/mubadalaenergy/job/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Manatal ATS (careers-page.com). Listing HTML is server-rendered with ~20 job links per page (/mubadalaenergy/job/{hash}); no JSON-LD. Better: JSON API GET https://www.careers-page.com/api/v1.0/c/mubadalaenergy/jobs/?search=safety -> {count, next, previous, results:[{id, hash, position_name, description, ...}]} (DRF pagination via 'next'); job URL https://www.careers-page.com/mubadalaenergy/job/{hash}. Many roles are in Indonesia/Malaysia."
+  },
+  {
+    "id": "lamprell",
+    "name": "Lamprell",
+    "category": "EPC / Engineering",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://www.lamprell.com/career-opportunities/",
+    "ats": {
+      "type": "html",
+      "url": "https://www.lamprell.com/career-opportunities/",
+      "linkPattern": "/jobs/"
+    },
+    "verified": "",
+    "notes": "WordPress 'WP Job Openings' (awsm) plugin; jobs list was EMPTY at check (WP REST GET https://www.lamprell.com/wp-json/wp/v2/awsm_job_openings?search=engineer returned []), so link pattern unconfirmed. REST endpoint is the better adapter target: returns WP post objects (title.rendered, link, date)."
+  },
+  {
+    "id": "abraj-energy",
+    "name": "Abraj Energy Services",
+    "category": "Drilling",
+    "region": "GCC",
+    "hq": "OM",
+    "careersUrl": "https://careers.abrajenergy.com",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.abrajenergy.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK; 'There are currently no open positions' at check time (page structure confirmed)."
+  },
+  {
+    "id": "kotc",
+    "name": "Kuwait Oil Tanker Company (KOTC)",
+    "category": "Offshore / Marine",
+    "region": "GCC",
+    "hq": "KW",
+    "careersUrl": "https://www.kotc.com.kw/JobVacancies/Pages/default.aspx",
+    "ats": {
+      "type": "link-only",
+      "reason": "SharePoint 'Job Vacancies' sub-site renders listings client-side; no list in static HTML."
+    },
+    "verified": ""
+  },
+  {
+    "id": "rawabi-holding",
+    "name": "Rawabi Holding",
+    "category": "Oilfield Services",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://careers.rawabi.com/",
+    "ats": {
+      "type": "html",
+      "url": "https://careers.rawabi.com/",
+      "linkPattern": "jb_id="
+    },
+    "verified": "2026-10-19",
+    "notes": "Bayt.com white-label careers site. Home page server-renders only a few featured jobs as /en/job-application/?jb_id={id} links; /en/job-search-results/?keyword= is JS-rendered (no jobs in HTML). Partial coverage only."
+  },
+  {
+    "id": "dodsal",
+    "name": "Dodsal Group",
+    "category": "EPC / Engineering",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://www.dodsal.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "dodsal.com unreachable from curl and serves a TLS cert for a different host (mylinwebsrv.aspgulf.net); no ATS identified."
+    },
+    "verified": ""
+  },
+  {
+    "id": "al-mansoori",
+    "name": "Al Mansoori Specialized Engineering",
+    "category": "Oilfield Services",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://www.almansoori.biz/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "almansoori.biz did not respond (connection timeout) from our network; ATS unknown."
+    },
+    "verified": ""
+  },
+  {
+    "id": "petrojet",
+    "name": "Petrojet",
+    "category": "EPC / Engineering",
+    "region": "Middle East & North Africa",
+    "hq": "EG",
+    "careersUrl": "https://www.petrojet.com.eg/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No careers page or ATS link on petrojet.com.eg; hiring advertised via Egyptian job boards (Wuzzuf etc.)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "enppi",
+    "name": "ENPPI",
+    "category": "EPC / Engineering",
+    "region": "Middle East & North Africa",
+    "hq": "EG",
+    "careersUrl": "https://www.enppi.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "'Careers' menu item is a dead '#' link; CVs by email (Recruitmentteam@enppi.com). No ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "petro-rabigh",
+    "name": "Petro Rabigh",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://careers.petrorabigh.com/jobs",
+    "ats": {
+      "type": "html",
+      "url": "https://careers.petrorabigh.com/jobs?query={q}",
+      "linkPattern": "careers.petrorabigh.com/jobs/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Teamtailor ATS. Server-rendered list; ?query= filters server-side (13 hits for 'engineer'). Job links absolute https://careers.petrorabigh.com/jobs/{id}-{slug}. Also an RSS feed: https://careers.petrorabigh.com/jobs.rss (<item><title/><link/><pubDate/>), all jobs, no keyword."
+  },
+  {
+    "id": "equate",
+    "name": "EQUATE Petrochemical Company",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "KW",
+    "careersUrl": "https://career5.successfactors.eu/career?company=EQUATE&site=VjItRG9OVktVYS9CQ3J3RmtmaHoxaFpSQT09",
+    "ats": {
+      "type": "successfactors-classic",
+      "host": "career5.successfactors.eu",
+      "company": "EQUATE"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic SuccessFactors XML feed: GET https://{host}/career?company={company}&career_ns=job_listing_summary&resultType=XML. Feed returned an empty <Job-Listing/> (0 jobs) at check, with or without &site=; endpoint confirmed."
+  },
+  {
+    "id": "sadara",
+    "name": "Sadara Chemical Company",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://career-sa20.hr.cloud.sap/career?company=SadaraProd",
+    "ats": {
+      "type": "successfactors-classic",
+      "host": "career-sa20.hr.cloud.sap",
+      "company": "SadaraProd"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic SuccessFactors XML feed: GET https://{host}/career?company={company}&career_ns=job_listing_summary&resultType=XML. Aramco/Dow JV in Jubail. Feed empty (0 jobs) at check; same host serves SATORP with jobs, so endpoint is valid."
+  },
+  {
+    "id": "archirodon",
+    "name": "Archirodon Group",
+    "category": "EPC / Engineering",
+    "region": "GCC",
+    "hq": "AE",
+    "careersUrl": "https://careers.smartrecruiters.com/ArchirodonGroup/our-job-openings",
+    "ats": {
+      "type": "smartrecruiters",
+      "companyId": "ArchirodonGroup"
+    },
+    "verified": "2026-10-19",
+    "notes": "SmartRecruiters API works as in schema (137 'engineer' hits, many Abu Dhabi oil & gas construction roles). HQ country unconfirmed (Dubai/Athens/NL)."
+  },
+  {
+    "id": "rumaila-roo",
+    "name": "Rumaila Operating Organisation (ROO)",
+    "category": "NOC",
+    "region": "Middle East & North Africa",
+    "hq": "IQ",
+    "careersUrl": "https://rumaila.iq/?p=689",
+    "ats": {
+      "type": "link-only",
+      "reason": "rumaila.iq has no job listings or ATS link; BP-seconded roles appear on bp.com careers (Iraq)."
+    },
+    "verified": ""
+  }
+]

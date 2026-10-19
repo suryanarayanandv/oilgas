@@ -1,0 +1,162 @@
+{
+  "$comment": "Hand fixes applied on top of data/research/*.json by `npm run build:companies`. Keyed by company id; fields replace the researched ones.",
+  "bechtel": {
+    "ats": {
+      "type": "phenom",
+      "searchUrl": "https://jobs.bechtel.com/us/en/search-results"
+    }
+  },
+  "adnoc": {
+    "ats": {
+      "type": "phenom",
+      "host": "jobs.adnoc.ae",
+      "localePath": "us/en",
+      "companyName": "ADNOC HQ"
+    },
+    "notes": "Group portal shared by subsidiaries; this entry keeps ADNOC HQ jobs only (subsidiaries have their own entries)."
+  },
+  "bureau-veritas": {
+    "ats": {
+      "type": "phenom",
+      "searchUrl": "https://jobs.bureauveritas.com/gb/en/search-results"
+    }
+  },
+  "qatarenergy": {
+    "ats": {
+      "type": "jibe",
+      "host": "careerportal.qatarenergy.qa"
+    }
+  },
+  "schneider-electric": {
+    "ats": {
+      "type": "link-only",
+      "reason": "Jibe job API returns 403 to automated requests; robots.txt disallows the search page"
+    }
+  },
+  "oil-states": {
+    "ats": {
+      "type": "ultipro",
+      "host": "recruiting2.ultipro.com",
+      "tenant": "OIL1000OIL",
+      "boardId": "db65c907-0c03-4705-9894-b6385fdde36e"
+    },
+    "verified": "2026-10-19"
+  },
+  "cactus": {
+    "ats": {
+      "type": "ultipro",
+      "host": "recruiting2.ultipro.com",
+      "tenant": "CAC1001CACC",
+      "boardId": "a107cbd1-c097-4da7-a6f4-2a4ab021b86e"
+    },
+    "verified": "2026-10-19"
+  },
+  "forum-energy-technologies": {
+    "ats": {
+      "type": "ultipro",
+      "host": "recruiting.ultipro.com",
+      "tenant": "FOR1013FET",
+      "boardId": "ef7c2aa4-79a3-4d81-8101-e9c85075c8e5"
+    },
+    "verified": "2026-10-19"
+  },
+  "superior-energy": {
+    "ats": {
+      "type": "ultipro",
+      "host": "recruiting2.ultipro.com",
+      "tenant": "COM1027SPN",
+      "boardId": "fcff7b7b-9c89-44f1-8187-dfa567a9da9c"
+    },
+    "verified": "2026-10-19"
+  },
+  "tetra-technologies": {
+    "ats": {
+      "type": "ultipro",
+      "host": "recruiting2.ultipro.com",
+      "tenant": "TET1000TETRA",
+      "boardId": "b9c888fa-45a6-454f-951a-0e24b3db84ef"
+    },
+    "verified": "2026-10-19"
+  },
+  "modec": {
+    "ats": {
+      "type": "breezy",
+      "hosts": [
+        "modec-us.us.careers.hr",
+        "modec-cn.us.careers.hr",
+        "modec-gy.us.careers.hr",
+        "modec-sn.us.careers.hr",
+        "modec-au.us.careers.hr",
+        "modec-gh.us.careers.hr",
+        "modec-mx.us.careers.hr",
+        "modec-sg.us.careers.hr",
+        "modec-uk.us.careers.hr",
+        "modec-vn.us.careers.hr",
+        "modecsingapore.us.careers.hr",
+        "ofsmalaysia.us.careers.hr",
+        "sofec-sg.us.careers.hr"
+      ]
+    },
+    "verified": "2026-10-19"
+  },
+  "dof": {
+    "ats": {
+      "type": "workable",
+      "account": "dof"
+    },
+    "verified": "2026-10-19"
+  },
+  "deepocean": {
+    "ats": {
+      "type": "hrmanager",
+      "customer": "527004_tr"
+    },
+    "verified": "2026-10-19"
+  },
+  "kinder-morgan": {
+    "ats": {
+      "type": "jibe",
+      "host": "careers.kindermorgan.com"
+    },
+    "verified": "2026-10-19"
+  },
+  "fluxys": {
+    "ats": {
+      "type": "jibe",
+      "host": "careers.fluxys.com"
+    },
+    "verified": "2026-10-19"
+  },
+  "mistras": {
+    "ats": {
+      "type": "ultipro",
+      "host": "recruiting.ultipro.com",
+      "tenant": "MIS1008",
+      "boardId": "0e453acf-d578-055d-9df2-f788e73fadcf"
+    },
+    "verified": "2026-10-19"
+  },
+  "team-inc": {
+    "ats": {
+      "type": "ultipro",
+      "host": "teaminc.rec.pro.ukg.net",
+      "tenant": "TEA1500TEMI",
+      "boardId": "a9bd01f6-f049-4ffa-851b-ec1d06dc206a"
+    },
+    "verified": "2026-10-19"
+  },
+  "enterprise-products": {
+    "ats": {
+      "type": "taleo",
+      "host": "epco.taleo.net",
+      "section": "6",
+      "portal": "16100012545"
+    }
+  },
+  "van-oord": {
+    "ats": {
+      "type": "link-only",
+      "reason": "robots.txt disallows automated access to /vacancies"
+    }
+  }
+}

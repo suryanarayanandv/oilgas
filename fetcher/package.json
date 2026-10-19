@@ -1,0 +1,22 @@
+{
+  "name": "fetcher",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "tsx src/index.ts",
+    "build:companies": "tsx src/merge-companies.ts",
+    "detect": "tsx src/detect-ats.ts",
+    "probe": "tsx src/probe.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

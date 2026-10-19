@@ -1,0 +1,1295 @@
+[
+  {
+    "id": "kbr",
+    "name": "KBR",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://kbr.wd5.myworkdayjobs.com/KBR_Careers",
+    "ats": {
+      "type": "workday",
+      "host": "kbr.wd5.myworkdayjobs.com",
+      "tenant": "kbr",
+      "site": "KBR_Careers"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "air-liquide",
+    "name": "Air Liquide (incl. Engineering & Construction)",
+    "category": "Refining / Petrochemicals",
+    "region": "Europe",
+    "hq": "FR",
+    "careersUrl": "https://airliquidehr.wd3.myworkdayjobs.com/AirLiquideExternalCareer",
+    "ats": {
+      "type": "workday",
+      "host": "airliquidehr.wd3.myworkdayjobs.com",
+      "tenant": "airliquidehr",
+      "site": "AirLiquideExternalCareer"
+    },
+    "verified": "2026-10-19",
+    "notes": "Group-wide site; E&C roles included. Many Process Safety Engineer roles."
+  },
+  {
+    "id": "worley",
+    "name": "Worley",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "AU",
+    "careersUrl": "https://jobs.worley.com/careers",
+    "ats": {
+      "type": "eightfold",
+      "host": "jobs.worley.com",
+      "domain": "worley.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Eightfold PCSX variant: /api/apply/v2/jobs returns 403 {\"message\":\"Not authorized for PCSX\"}. Use GET https://jobs.worley.com/api/pcsx/search?domain=worley.com&query=safety&location=&start=0 -> {data:{count, positions:[{name, locations[], postedTs (unix s), positionUrl (relative, e.g. /careers/job/1133910178866)}]}}"
+  },
+  {
+    "id": "fluor",
+    "name": "Fluor",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.fluor.com/careers",
+    "ats": {
+      "type": "eightfold",
+      "host": "careers.fluor.com",
+      "domain": "fluor.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic Eightfold v2 API works. Underlying SuccessFactors RMK site https://thrivecareers.fluor.com also works (search/?q=)."
+  },
+  {
+    "id": "technip-energies",
+    "name": "Technip Energies",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "FR",
+    "careersUrl": "https://hcxg.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions",
+    "ats": {
+      "type": "oracle",
+      "host": "hcxg.fa.em2.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "Multiple Technical Safety / Process Safety roles (KL, Abu Dhabi)."
+  },
+  {
+    "id": "bechtel",
+    "name": "Bechtel",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://jobs.bechtel.com/us/en",
+    "ats": {
+      "type": "html",
+      "url": "https://jobs.bechtel.com/us/en/search-results?keywords={q}"
+    },
+    "verified": "2026-10-19",
+    "notes": "PHENOM site (no job hrefs in HTML). Jobs are in inline script `phApp.ddo = {...};` -> eagerLoadRefineSearch.{totalHits, data.jobs[{title, jobId, reqId, cityStateCountry, postedDate}]} (10 per page, &from=N to page). Job URL = https://jobs.bechtel.com/us/en/job/{jobId}. Backend ATS is SuccessFactors (company=Bechtel, career4)."
+  },
+  {
+    "id": "mcdermott",
+    "name": "McDermott",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://edsv.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions",
+    "ats": {
+      "type": "oracle",
+      "host": "edsv.fa.us2.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "mcdermott.com itself returns 403 to curl; the Oracle API is open. Many HSE / Technical Safety & Loss Prevention roles."
+  },
+  {
+    "id": "tecnicas-reunidas",
+    "name": "Técnicas Reunidas",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "ES",
+    "careersUrl": "https://careers.tecnicasreunidas.es/?locale=en_GB",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.tecnicasreunidas.es"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "hill-international",
+    "name": "Hill International",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://hcib.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions",
+    "ats": {
+      "type": "oracle",
+      "host": "hcib.fa.us2.oraclecloud.com",
+      "siteNumber": "CX_1001"
+    },
+    "verified": "2026-10-19",
+    "notes": "Project/construction management; mostly PM/cost roles."
+  },
+  {
+    "id": "kent",
+    "name": "Kent",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://fa-emqh-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions",
+    "ats": {
+      "type": "oracle",
+      "host": "fa-emqh-saasfaprod1.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX_1001"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "honeywell",
+    "name": "Honeywell (incl. UOP)",
+    "category": "Refining / Petrochemicals",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.honeywell.com/",
+    "ats": {
+      "type": "oracle",
+      "host": "ibqbjb.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.honeywell.com is a Phenom front-end over Oracle Recruiting; UOP roles are in the same feed. Large volume, filter for process/safety."
+  },
+  {
+    "id": "tata-consulting-engineers",
+    "name": "Tata Consulting Engineers",
+    "category": "EPC / Engineering",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://careers.tataconsultingengineers.com/search",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.tataconsultingengineers.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "RMK tile layout: <a class=\"jobTitle-link fontcolor...\" data-focus-tile=... href=\"/job/...\"> (attributes between class and href; title text on following line). US arm uses iCIMS careers-tceusa.icims.com."
+  },
+  {
+    "id": "saipem",
+    "name": "Saipem",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "IT",
+    "careersUrl": "https://www.saipem.com/en/saipem-people/join-our-company",
+    "ats": {
+      "type": "link-only",
+      "reason": "saipem.com returns 403 to non-browser requests; vacancies are on nCore HR portal https://gps.ncorehr.com/ which is a JS-only SPA"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "aker-solutions",
+    "name": "Aker Solutions",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.akersolutions.com/careers/job-search/",
+    "ats": {
+      "type": "html",
+      "url": "https://www.akersolutions.com/careers/job-search/",
+      "linkPattern": "/careers/job-search?jobPostId="
+    },
+    "verified": "2026-10-19",
+    "notes": "Server-rendered list of all openings (~30 links); no keyword param, filter titles client-side."
+  },
+  {
+    "id": "aibel",
+    "name": "Aibel",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://aibel.com/careers/vacant-positions",
+    "ats": {
+      "type": "html",
+      "url": "https://aibel.com/careers/vacant-positions",
+      "linkPattern": "aibel.com/jobs/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Full list server-rendered (absolute hrefs https://aibel.com/jobs/<slug>); applications via hr-manager.net. No keyword param."
+  },
+  {
+    "id": "kongsberg",
+    "name": "Kongsberg (incl. Kongsberg Digital)",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.kongsberg.com/careers/vacancies/",
+    "ats": {
+      "type": "html",
+      "url": "https://www.kongsberg.com/careers/vacancies/",
+      "linkPattern": "/careers/vacancies/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Full list server-rendered (relative hrefs /careers/vacancies/<slug>/); ?q= is ignored. Exclude the bare /careers/vacancies/ link. Backend: easycruit."
+  },
+  {
+    "id": "erm",
+    "name": "ERM",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://erm.wd3.myworkdayjobs.com/erm_Careers",
+    "ats": {
+      "type": "workday",
+      "host": "erm.wd3.myworkdayjobs.com",
+      "tenant": "erm",
+      "site": "erm_Careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "Strong process safety consulting practice."
+  },
+  {
+    "id": "williams",
+    "name": "Williams",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://williams.wd5.myworkdayjobs.com/External",
+    "ats": {
+      "type": "workday",
+      "host": "williams.wd5.myworkdayjobs.com",
+      "tenant": "williams",
+      "site": "External"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "dow",
+    "name": "Dow",
+    "category": "Refining / Petrochemicals",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://dow.wd1.myworkdayjobs.com/ExternalCareers",
+    "ats": {
+      "type": "workday",
+      "host": "dow.wd1.myworkdayjobs.com",
+      "tenant": "dow",
+      "site": "ExternalCareers"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "tc-energy",
+    "name": "TC Energy",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://tcenergy.wd3.myworkdayjobs.com/en-US/CAREER_SITE_TC",
+    "ats": {
+      "type": "workday",
+      "host": "tcenergy.wd3.myworkdayjobs.com",
+      "tenant": "tcenergy",
+      "site": "CAREER_SITE_TC"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "enbridge",
+    "name": "Enbridge",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://enbridge.wd3.myworkdayjobs.com/enbridge_careers",
+    "ats": {
+      "type": "workday",
+      "host": "enbridge.wd3.myworkdayjobs.com",
+      "tenant": "enbridge",
+      "site": "enbridge_careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.enbridge.com redirects to this Workday site."
+  },
+  {
+    "id": "cheniere",
+    "name": "Cheniere Energy",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://hcgi.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/jobs",
+    "ats": {
+      "type": "oracle",
+      "host": "hcgi.fa.us2.oraclecloud.com",
+      "siteNumber": "CX_2"
+    },
+    "verified": "2026-10-19",
+    "notes": "Active site found via GET /hcmRestApi/resources/latest/recruitingCESites?onlyData=true (CX_2 = ORA_ACTIVE)."
+  },
+  {
+    "id": "lyondellbasell",
+    "name": "LyondellBasell",
+    "category": "Refining / Petrochemicals",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.lyondellbasell.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.lyondellbasell.com"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "basf",
+    "name": "BASF",
+    "category": "Refining / Petrochemicals",
+    "region": "Europe",
+    "hq": "DE",
+    "careersUrl": "https://basf.jobs/search?locale=en_US",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://basf.jobs"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF CSB *Unify* variant: /search/?q= returns a JS shell (no data-row). Use POST https://basf.jobs/services/recruiting/v1/jobs with JSON {\"locale\":\"en_US\",\"pageNumber\":0,\"sortBy\":\"\",\"keywords\":\"safety\",\"location\":\"\",\"facetFilters\":{},\"brand\":\"\",\"skills\":[],\"categoryId\":0,\"alertId\":\"\",\"rcmCandidateId\":\"\"} -> {totalJobs, jobSearchResult:[{response:{id, unifiedStandardTitle, urlTitle, jobLocationShort[], unifiedStandardStart}}]} (10/page). Job URL = https://basf.jobs/job/{urlTitle}/{id}-en_US. RSS also works: /services/rss/job/?locale=en_US&keywords=safety."
+  },
+  {
+    "id": "kinder-morgan",
+    "name": "Kinder Morgan",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.kindermorgan.com/careers-home/jobs",
+    "ats": {
+      "type": "link-only",
+      "reason": "JIBE front-end (iCIMS backend careers-kindermorgan.icims.com whose /jobs/search returns no job links). Automatable via Jibe JSON: GET https://careers.kindermorgan.com/api/jobs?keywords=safety&page=1 -> {totalCount, jobs:[{data:{req_id, slug, title, city, country, posted_date, apply_url}}]} (API checked 2026-10-19)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "fluxys",
+    "name": "Fluxys",
+    "category": "LNG / Midstream",
+    "region": "Europe",
+    "hq": "BE",
+    "careersUrl": "https://careers.fluxys.com/jobs",
+    "ats": {
+      "type": "link-only",
+      "reason": "JIBE front-end (iCIMS backend careers-fluxys.icims.com whose /jobs/search returns no job links). Automatable via Jibe JSON: GET https://careers.fluxys.com/api/jobs?keywords=safety&page=1 -> {totalCount, jobs:[{data:{req_id, slug, title, city, country, posted_date, apply_url}}]} (API checked 2026-10-19)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "braskem",
+    "name": "Braskem",
+    "category": "Refining / Petrochemicals",
+    "region": "Latin America",
+    "hq": "BR",
+    "careersUrl": "https://www.braskem.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "Global careers page links to ADP Workforce Now (US) and regional portals; no single searchable feed"
+    },
+    "verified": ""
+  },
+  {
+    "id": "sphera",
+    "name": "Sphera",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://sphera.wd1.myworkdayjobs.com/careers",
+    "ats": {
+      "type": "workday",
+      "host": "sphera.wd1.myworkdayjobs.com",
+      "tenant": "sphera",
+      "site": "careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "Mostly software/ESG roles; occasional PSM/operational risk consultants."
+  },
+  {
+    "id": "abs-group",
+    "name": "ABS Group / American Bureau of Shipping",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://hbbq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "ats": {
+      "type": "oracle",
+      "host": "hbbq.fa.us2.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "abs-group.com careers links to this shared ABS Oracle site (CX_1 active per recruitingCESites)."
+  },
+  {
+    "id": "ramboll",
+    "name": "Ramboll",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "DK",
+    "careersUrl": "https://www.ramboll.com/careers",
+    "ats": {
+      "type": "smartrecruiters",
+      "companyId": "Ramboll3"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "bakerrisk",
+    "name": "Baker Engineering & Risk Consultants (BakerRisk)",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://bakerrisk.hrmdirect.com/employment/job-openings.php?search=true",
+    "ats": {
+      "type": "html",
+      "url": "https://bakerrisk.hrmdirect.com/employment/job-openings.php?search=true",
+      "linkPattern": "job-opening.php?req="
+    },
+    "verified": "2026-10-19",
+    "notes": "HRMDirect server-rendered table; hrefs are relative (job-opening.php?req=..&req_loc=..), resolve against https://bakerrisk.hrmdirect.com/employment/. Same req appears once per location."
+  },
+  {
+    "id": "gexcon",
+    "name": "Gexcon",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.gexcon.com/careers/",
+    "ats": {
+      "type": "html",
+      "url": "https://www.gexcon.com/careers/",
+      "linkPattern": "gexcon.com/careers/[a-z0-9-]+/"
+    },
+    "verified": "2026-10-19",
+    "notes": "WordPress; each vacancy is a child page of /careers/. linkPattern is a regex; exclude /careers/ itself and ?accept= variants."
+  },
+  {
+    "id": "lloyds-register",
+    "name": "Lloyd's Register",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.lr.org/en/careers/careers-search-page/",
+    "ats": {
+      "type": "link-only",
+      "reason": "lr.org search page is JS-rendered (Episerver). Backend is legacy SuccessFactors career5 (company=lloydsregiP); its XML feed https://career5.successfactors.eu/career?company=lloydsregiP&career_ns=job_listing_summary&resultType=XML works but listed only 6 jobs, so it looks incomplete"
+    },
+    "verified": ""
+  },
+  {
+    "id": "vysus-group",
+    "name": "Vysus Group",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://careers.vysusgroup.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Angular SPA on PostingPanda (postingpandaapi-live.azurewebsites.net); job sitemap is empty, no server-rendered links"
+    },
+    "verified": ""
+  },
+  {
+    "id": "intertek",
+    "name": "Intertek",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://hcog.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs",
+    "ats": {
+      "type": "oracle",
+      "host": "hcog.fa.em2.oraclecloud.com",
+      "siteNumber": "CX_2001"
+    },
+    "verified": "2026-10-19",
+    "notes": "CX_2001 = Intertek Global (largest). Other active sites: CX_1 USA, CX_2 Canada, CX_1003 UK, CX_4001 Bangladesh; siteNumber does filter results."
+  },
+  {
+    "id": "bureau-veritas",
+    "name": "Bureau Veritas",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "FR",
+    "careersUrl": "https://jobs.bureauveritas.com/gb/en/home",
+    "ats": {
+      "type": "html",
+      "url": "https://jobs.bureauveritas.com/gb/en/search-results?keywords={q}"
+    },
+    "verified": "2026-10-19",
+    "notes": "PHENOM site (same as Bechtel): parse inline `phApp.ddo = {...};` -> eagerLoadRefineSearch.{totalHits, data.jobs[{title, jobId, cityStateCountry, postedDate}]}. Job URL = https://jobs.bureauveritas.com/gb/en/job/{jobId}. No job hrefs in HTML."
+  },
+  {
+    "id": "element",
+    "name": "Element Materials Technology",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.element.com/careers",
+    "ats": {
+      "type": "icims",
+      "host": "element-ext-hub.icims.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "iCIMS hub portal: job links point to regional portals (element-ext-ger / element-ext-row / ...icims.com) with ?hub=11; keep the absolute hrefs."
+  },
+  {
+    "id": "applus",
+    "name": "Applus+",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "ES",
+    "careersUrl": "https://jobs.applus.com/en",
+    "ats": {
+      "type": "link-only",
+      "reason": "Fragmented: jobs.applus.com is a JS SPA; Workday site applus.wd3.myworkdayjobs.com/applus_careers exists but returns 0 postings; regional portals on iCIMS (careers-applusna, returns no links), Emply, Recruitee, ADP, Buk"
+    },
+    "verified": ""
+  },
+  {
+    "id": "mistras",
+    "name": "Mistras Group",
+    "category": "Inspection / Certification",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://recruiting.ultipro.com/MIS1008/JobBoard/0e453acf-d578-055d-9df2-f788e73fadcf/",
+    "ats": {
+      "type": "link-only",
+      "reason": "UKG/UltiPro job board (no adapter in schema). Automatable: POST https://recruiting.ultipro.com/MIS1008/JobBoard/0e453acf-d578-055d-9df2-f788e73fadcf/JobBoardView/LoadSearchResults body {\"opportunitySearch\":{\"Top\":50,\"Skip\":0,\"QueryString\":\"safety\",\"OrderBy\":[],\"Filters\":[]}} -> {totalCount, opportunities:[{Id, Title, RequisitionNumber, PostedDate, Locations[{LocalizedDescription}]}]}; job URL = .../OpportunityDetail?opportunityId={Id}. QueryString appears not to filter (API checked 2026-10-19)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "tuv-nord",
+    "name": "TÜV NORD Group",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "DE",
+    "careersUrl": "https://www.tuev-nord-group.com/en/career/jobs/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Job list is loaded client-side; only ~6 featured job-detail links are server-rendered"
+    },
+    "verified": ""
+  },
+  {
+    "id": "dnv",
+    "name": "DNV",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://jobs.dnv.com/job-search",
+    "ats": {
+      "type": "oracle",
+      "host": "ecyq.fa.em2.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "jobs.dnv.com is a custom front-end over Oracle Recruiting (www.dnv.com returns 403 to curl). Oracle API open; Process Safety / Risk roles present."
+  },
+  {
+    "id": "arcadis",
+    "name": "Arcadis",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "NL",
+    "careersUrl": "https://jobs.arcadis.com/careers",
+    "ats": {
+      "type": "eightfold",
+      "host": "jobs.arcadis.com",
+      "domain": "arcadis.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Eightfold PCSX variant (v2 API 403). Use /api/pcsx/search?domain=arcadis.com&query=..&location=&start=0 (see Worley notes)."
+  },
+  {
+    "id": "tuv-sud",
+    "name": "TÜV SÜD",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "DE",
+    "careersUrl": "https://jobs.tuvsud.com/?locale=en_US",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.tuvsud.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF CSB Unify variant (like BASF): /search/?q= has no data-row; use POST /services/recruiting/v1/jobs. urlTitle comes HTML-escaped (&amp;) - unescape before building /job/{urlTitle}/{id}-en_US. tuvsud.com returns 403 to curl."
+  },
+  {
+    "id": "exponent",
+    "name": "Exponent",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.exponent.com/careers",
+    "ats": {
+      "type": "icims",
+      "host": "careers-exponent.icims.com"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "team-inc",
+    "name": "Team Inc",
+    "category": "Inspection / Certification",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://teaminc.rec.pro.ukg.net/TEA1500TEMI/JobBoard/a9bd01f6-f049-4ffa-851b-ec1d06dc206a/",
+    "ats": {
+      "type": "link-only",
+      "reason": "UKG Pro Recruiting (new host rec.pro.ukg.net; no schema adapter). Automatable: POST https://teaminc.rec.pro.ukg.net/TEA1500TEMI/JobBoard/a9bd01f6-f049-4ffa-851b-ec1d06dc206a/JobBoardView/LoadSearchResults body {\"opportunitySearch\":{\"Top\":50,\"Skip\":0,\"QueryString\":\"safety\",\"OrderBy\":[],\"Filters\":[]}} -> {totalCount, opportunities[{Id, Title, PostedDate, Locations}]} (API checked 2026-10-19; QueryString did not filter)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "rina",
+    "name": "RINA",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "IT",
+    "careersUrl": "https://careers.rina.org/go/Current-Opportunities/8934455/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.rina.org"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "iomosaic",
+    "name": "ioMosaic",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.iomosaic.com/careers/career-opportunities",
+    "ats": {
+      "type": "html",
+      "url": "https://www2.appone.com/Search/Search.aspx?ServerVar=iomosaic.appone.com",
+      "linkPattern": "Main.asp?Type=REQ"
+    },
+    "verified": "2026-10-19",
+    "notes": "Paychex AppOne search page, server-rendered. Job links are javascript:jsNewWindow(&#39;https://recruiting.myapps.paychex.com/appone/Main.asp?Type=REQ...JobCode=NNN...&#39;) - extract the inner URL (HTML-unescape) and skip JobCode=0 (email-me link). Only ~1 opening at time of check."
+  },
+  {
+    "id": "exida",
+    "name": "exida",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.exida.com/Careers",
+    "ats": {
+      "type": "html",
+      "url": "https://www.exida.com/Careers",
+      "linkPattern": "exida.com/Careers/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Small list of server-rendered job pages (https://www.exida.com/Careers/<slug>); EU jobs on https://www.exida-eu.com (404 at /job)."
+  },
+  {
+    "id": "tuv-rheinland",
+    "name": "TÜV Rheinland",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "DE",
+    "careersUrl": "https://www.tuv.com/jobs-and-career/en/search/index.jsp",
+    "ats": {
+      "type": "link-only",
+      "reason": "Job search is rendered client-side; jobs.tuv.com /search 404s and the SF Unify API returns nothing; backend is SuccessFactors career5"
+    },
+    "verified": ""
+  },
+  {
+    "id": "risktec",
+    "name": "Risktec (TÜV Rheinland)",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.risktec.tuv.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "risktec.tuv.com timed out from curl; vacancies are published through TÜV Rheinland careers (JS search)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "jee",
+    "name": "Jee Ltd",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.jee.co.uk/current-vacancies",
+    "ats": {
+      "type": "link-only",
+      "reason": "Small HubSpot site; vacancies page lists roles inline with no per-job links or ATS"
+    },
+    "verified": ""
+  },
+  {
+    "id": "kenexis",
+    "name": "Kenexis",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.kenexis.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No careers page or ATS found (careers URLs 404); hiring through LinkedIn"
+    },
+    "verified": ""
+  },
+  {
+    "id": "penspen",
+    "name": "Penspen",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://careers.penspen.com/vacancies.html",
+    "ats": {
+      "type": "html",
+      "url": "https://careers.penspen.com/rss_jobs.xml",
+      "linkPattern": "careers.penspen.com/vacancy/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Hireserve ATS. vacancies.html is JS-driven, but the RSS feed lists all vacancies (~186) as <item><link>https://careers.penspen.com/vacancy/<slug>-<id>.html</link>; links are in <link> text, not href attributes. No keyword param."
+  },
+  {
+    "id": "ineos",
+    "name": "INEOS",
+    "category": "Refining / Petrochemicals",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.ineos.com/careers/jobs/",
+    "ats": {
+      "type": "html",
+      "url": "https://www.ineos.com/careers/jobs/",
+      "linkPattern": "careers.ineos.com/jobs/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Only first page (~10) of jobs server-rendered; links look like https://careers.ineos.com/jobs/<slug>_<id>/details."
+  },
+  {
+    "id": "venture-global",
+    "name": "Venture Global LNG",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://ventureglobal.com/careers/",
+    "ats": {
+      "type": "html",
+      "url": "https://ventureglobal.com/careers/",
+      "linkPattern": "#job=JR_"
+    },
+    "verified": "2026-10-19",
+    "notes": "WordPress front-end over Workday req IDs (JR_xxxx). Server HTML has first 10 cards (<article data-job-id=JR_...>, 244 total). JSON endpoint https://ventureglobal.com/wp-json/vg-careers/v1/jobs?search=safety returns {results_html} with the same card markup (keyword param name unconfirmed; returned 91). Job link = https://ventureglobal.com/careers/#job=JR_xxxx."
+  },
+  {
+    "id": "maire",
+    "name": "MAIRE (Tecnimont / NextChem / KT)",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "IT",
+    "careersUrl": "https://www.groupmaire.com/en/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "groupmaire.com sits behind Radware bot protection (captcha page to curl)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "sempra-infrastructure",
+    "name": "Sempra Infrastructure",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.sempra.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "sempra.com returns 403 to non-browser requests; ATS not identified"
+    },
+    "verified": ""
+  },
+  {
+    "id": "sabic",
+    "name": "SABIC",
+    "category": "Refining / Petrochemicals",
+    "region": "GCC",
+    "hq": "SA",
+    "careersUrl": "https://www.sabic.com/en/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "sabic.com returns 406 (AppTrana WAF) to non-browser requests"
+    },
+    "verified": ""
+  },
+  {
+    "id": "larsen-toubro",
+    "name": "Larsen & Toubro (Energy / Hydrocarbon)",
+    "category": "EPC / Engineering",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://larsentoubrocareers.peoplestrong.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "PeopleStrong ATS: JS-only SPA, no server-rendered jobs"
+    },
+    "verified": ""
+  },
+  {
+    "id": "engineers-india",
+    "name": "Engineers India Ltd (EIL)",
+    "category": "EPC / Engineering",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://recruitment.eil.co.in/",
+    "ats": {
+      "type": "link-only",
+      "reason": "PSU recruitment: vacancies published as PDF advertisements (./hrdnew/*.pdf), no job listing feed"
+    },
+    "verified": ""
+  },
+  {
+    "id": "samsung-ena",
+    "name": "Samsung E&A",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "KR",
+    "careersUrl": "https://www.samsungena.com/en/careers/join-us/job-opening/list",
+    "ats": {
+      "type": "link-only",
+      "reason": "Job-opening list is rendered client-side; Korean hiring via samsungcareers.com"
+    },
+    "verified": ""
+  },
+  {
+    "id": "hyundai-ec",
+    "name": "Hyundai E&C",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "KR",
+    "careersUrl": "https://www.hdec.kr/en/",
+    "ats": {
+      "type": "link-only",
+      "reason": "English site has no job listings; recruitment is in Korean through external portals"
+    },
+    "verified": ""
+  },
+  {
+    "id": "jgc",
+    "name": "JGC Holdings",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "JP",
+    "careersUrl": "https://www.jgc.com/en/recruit/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recruit page links out to regional affiliates (JGC Vietnam, Indonesia, Philippines, America, Saudi); no central ATS"
+    },
+    "verified": ""
+  },
+  {
+    "id": "toyo-engineering",
+    "name": "Toyo Engineering",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "JP",
+    "careersUrl": "https://recruit.toyo-eng.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Japanese-language recruitment site with no structured job feed"
+    },
+    "verified": ""
+  },
+  {
+    "id": "linde-engineering",
+    "name": "Linde (incl. Linde Engineering)",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.lindecareers.com/en/search-jobs",
+    "ats": {
+      "type": "link-only",
+      "reason": "Cornerstone OnDemand (linde.csod.com) behind a JS search page; CSOD API needs a session token"
+    },
+    "verified": ""
+  },
+  {
+    "id": "burns-mcdonnell",
+    "name": "Burns & McDonnell",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://burnsmcd.jobs/",
+    "ats": {
+      "type": "link-only",
+      "reason": "DirectEmployers .jobs Nuxt app (client-rendered, no job hrefs in HTML); apply.burnsmcd.com is the ATS front-end"
+    },
+    "verified": ""
+  },
+  {
+    "id": "oneok",
+    "name": "ONEOK",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://oneok.wd1.myworkdayjobs.com/ONEOK",
+    "ats": {
+      "type": "workday",
+      "host": "oneok.wd1.myworkdayjobs.com",
+      "tenant": "oneok",
+      "site": "ONEOK"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "chevron-phillips-chemical",
+    "name": "Chevron Phillips Chemical",
+    "category": "Refining / Petrochemicals",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://jobs.cpchem.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.cpchem.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "RMK job hrefs carry a brand prefix: /CPChem/job/<slug>/<id>/ (not /job/...). First jobTitle-link per row has no href (mobile/desktop duplicate)."
+  },
+  {
+    "id": "sasol",
+    "name": "Sasol",
+    "category": "Refining / Petrochemicals",
+    "region": "Sub-Saharan Africa",
+    "hq": "ZA",
+    "careersUrl": "https://jobs.sasol.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.sasol.com"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "borealis",
+    "name": "Borealis",
+    "category": "Refining / Petrochemicals",
+    "region": "Europe",
+    "hq": "AT",
+    "careersUrl": "https://careers.borealisgroup.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.borealisgroup.com"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "westlake",
+    "name": "Westlake",
+    "category": "Refining / Petrochemicals",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.westlaketalent.com/jobs",
+    "ats": {
+      "type": "html",
+      "url": "https://www.westlaketalent.com/jobs",
+      "linkPattern": "/job/"
+    },
+    "verified": "2026-10-19",
+    "notes": "Server-rendered list (~20/page), hrefs /<slug>/job/<32-hex GUID>; ?q= ignored."
+  },
+  {
+    "id": "covestro",
+    "name": "Covestro",
+    "category": "Refining / Petrochemicals",
+    "region": "Europe",
+    "hq": "DE",
+    "careersUrl": "https://covestro.wd3.myworkdayjobs.com/cov_external",
+    "ats": {
+      "type": "workday",
+      "host": "covestro.wd3.myworkdayjobs.com",
+      "tenant": "covestro",
+      "site": "cov_external"
+    },
+    "verified": "2026-10-19",
+    "notes": "Process Engineer (Pressure Safety) roles at Baytown."
+  },
+  {
+    "id": "plains",
+    "name": "Plains All American",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://plains.wd1.myworkdayjobs.com/plains",
+    "ats": {
+      "type": "workday",
+      "host": "plains.wd1.myworkdayjobs.com",
+      "tenant": "plains",
+      "site": "plains"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "evonik",
+    "name": "Evonik",
+    "category": "Refining / Petrochemicals",
+    "region": "Europe",
+    "hq": "DE",
+    "careersUrl": "https://www.evonik.com/en/careers/jobs.html",
+    "ats": {
+      "type": "workday",
+      "host": "evonik.wd3.myworkdayjobs.com",
+      "tenant": "evonik",
+      "site": "External_Careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "evonik.com job pages (job.html?jobId=R#####) front this Workday site."
+  },
+  {
+    "id": "enterprise-products",
+    "name": "Enterprise Products",
+    "category": "LNG / Midstream",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.enterpriseproducts.com/careers/job-openings/",
+    "ats": {
+      "type": "taleo",
+      "host": "epco.taleo.net",
+      "section": "6"
+    },
+    "verified": "2026-10-19",
+    "notes": "Taleo search is JS; working JSON: POST https://epco.taleo.net/careersection/rest/jobboard/searchjobs?lang=en&portal=16100012545 (header tz: GMT-05:00, Content-Type JSON) body {\"multilineEnabled\":false,\"sortingSelection\":{\"sortBySelectionParam\":\"3\",\"ascendingSortingOrder\":\"false\"},\"fieldData\":{\"fields\":{\"KEYWORD\":\"safety\",\"LOCATION\":\"\"},\"valid\":true},\"filterSelectionParam\":{\"searchFilterSelections\":[]},\"advancedSearchFiltersSelectionParam\":{\"searchFilterSelections\":[]},\"pageNo\":1} -> {requisitionList:[{jobId, contestNo, column:[title, locationsJSON, postedDate]}], pagingData:{totalCount,pageSize}}. Needs the numeric portal id (not in schema). Section 6 is mostly transport/driver roles; other sections: alljobs, ent_trans, fieldops. Job URL = https://epco.taleo.net/careersection/6/jobdetail.ftl?job={contestNo}"
+  },
+  {
+    "id": "wood",
+    "name": "Wood",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.woodgroup.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "woodplc.com redirects to woodgroup.com which returns 403 to curl and WebFetch; ATS not identified"
+    },
+    "verified": ""
+  },
+  {
+    "id": "jacobs",
+    "name": "Jacobs",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.jacobs.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "careers.jacobs.com returns HTTP 202 bot-challenge with empty body to non-browser clients; ATS not identified"
+    },
+    "verified": ""
+  },
+  {
+    "id": "atkinsrealis",
+    "name": "AtkinsRéalis",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://careers.atkinsrealis.com/en/jobs",
+    "ats": {
+      "type": "link-only",
+      "reason": "Custom Vue front-end (Investis); job cards rendered client-side from an undisclosed API; no job hrefs in HTML"
+    },
+    "verified": ""
+  },
+  {
+    "id": "petrofac",
+    "name": "Petrofac",
+    "category": "EPC / Engineering",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.petrofac.com/careers/find-a-job-at-petrofac/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Job search is an embedded iframe app; petrofac.taleo.net section 2 says Career Section Unavailable; only referrals.selectminds.com is linked"
+    },
+    "verified": ""
+  },
+  {
+    "id": "chiyoda",
+    "name": "Chiyoda Corporation",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "JP",
+    "careersUrl": "https://www.chiyodacorp.com/en/recruit/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recruit page links to Japanese external recruitment (gred.jp); no structured English job feed"
+    },
+    "verified": ""
+  },
+  {
+    "id": "gs-enc",
+    "name": "GS E&C",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "KR",
+    "careersUrl": "https://www.gsenc.com/en/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recruitment is in Korean via external portals; no English job feed"
+    },
+    "verified": ""
+  },
+  {
+    "id": "daewoo-enc",
+    "name": "Daewoo E&C",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "KR",
+    "careersUrl": "https://www.daewooenc.com/eng/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recruitment is in Korean via external portals; no English job feed"
+    },
+    "verified": ""
+  },
+  {
+    "id": "kiewit",
+    "name": "Kiewit",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.kiewit.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "kiewit.com returns 403 to non-browser requests"
+    },
+    "verified": ""
+  },
+  {
+    "id": "zachry",
+    "name": "Zachry Group",
+    "category": "EPC / Engineering",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.zachrygroup.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "careers.zachrygroup.com timed out from curl; ATS not identified"
+    },
+    "verified": ""
+  },
+  {
+    "id": "wison",
+    "name": "Wison Engineering",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "CN",
+    "careersUrl": "https://www.wison.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No online ATS found; recruitment announced on the corporate site / Chinese job boards"
+    },
+    "verified": ""
+  },
+  {
+    "id": "cpecc",
+    "name": "CPECC (China Petroleum Engineering & Construction)",
+    "category": "EPC / Engineering",
+    "region": "Asia-Pacific",
+    "hq": "CN",
+    "careersUrl": "https://cpecc.cnpc.com.cn/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Site returned 504 from outside China; recruitment via CNPC campus/social hiring portals in Chinese"
+    },
+    "verified": ""
+  },
+  {
+    "id": "enppi",
+    "name": "Enppi",
+    "category": "EPC / Engineering",
+    "region": "Middle East & North Africa",
+    "hq": "EG",
+    "careersUrl": "https://www.enppi.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No online ATS found; careers handled via CV submission"
+    },
+    "verified": ""
+  },
+  {
+    "id": "sgs",
+    "name": "SGS",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "CH",
+    "careersUrl": "https://www.sgs.com/en/our-company/careers-at-sgs/job-opportunities",
+    "ats": {
+      "type": "link-only",
+      "reason": "Job search is a Coveo-powered client-side widget; WebFetch gets 403; ATS not identified"
+    },
+    "verified": ""
+  },
+  {
+    "id": "kiwa",
+    "name": "Kiwa",
+    "category": "Inspection / Certification",
+    "region": "Europe",
+    "hq": "NL",
+    "careersUrl": "https://careers.kiwa.com/en/",
+    "ats": {
+      "type": "link-only",
+      "reason": "careers.kiwa.com is a client-rendered SPA; no job links or API found in HTML"
+    },
+    "verified": ""
+  },
+  {
+    "id": "gasunie",
+    "name": "Gasunie",
+    "category": "LNG / Midstream",
+    "region": "Europe",
+    "hq": "NL",
+    "careersUrl": "https://www.werkenbijgasunie.nl/vacatures",
+    "ats": {
+      "type": "link-only",
+      "reason": "GetNoticed recruitment site; vacancy list loads client-side (no vacancy hrefs in HTML)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "indorama-ventures",
+    "name": "Indorama Ventures",
+    "category": "Refining / Petrochemicals",
+    "region": "Asia-Pacific",
+    "hq": "TH",
+    "careersUrl": "https://www.indoramaventures.com/en/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No central ATS found; careers pages 404 and hiring is per-site/region"
+    },
+    "verified": ""
+  },
+  {
+    "id": "prosafe-consultants",
+    "name": "ProSafe Consultants",
+    "category": "Safety / Risk Consultancy",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.prosafeconsultants.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Small consultancy; no careers page or ATS (careers URL 404)"
+    },
+    "verified": ""
+  },
+  {
+    "id": "psrg",
+    "name": "Process Safety & Reliability Group (PSRG)",
+    "category": "Safety / Risk Consultancy",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.psrgroup.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Small consultancy; /careers redirects to the homepage, no ATS"
+    },
+    "verified": ""
+  }
+]

@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "shell",
+    "name": "Shell",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://shell.wd3.myworkdayjobs.com/ShellCareers",
+    "ats": {
+      "type": "workday",
+      "host": "shell.wd3.myworkdayjobs.com",
+      "tenant": "shell",
+      "site": "ShellCareers"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "bp",
+    "name": "bp",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://careers.bp.com/listing",
+    "ats": {
+      "type": "workday",
+      "host": "bpinternational.wd3.myworkdayjobs.com",
+      "tenant": "bpinternational",
+      "site": "bpCareers"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.bp.com front-end (also references bp.avature.net talent community) links to Workday tenant bpinternational."
+  },
+  {
+    "id": "exxonmobil",
+    "name": "ExxonMobil",
+    "category": "IOC",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://jobs.exxonmobil.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.exxonmobil.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML search: /search/?q=&startrow= returns tr.data-row with a.jobTitle-link (25 rows/page). Global site incl. India (Bangalore) and Malaysia technical centres."
+  },
+  {
+    "id": "chevron",
+    "name": "Chevron",
+    "category": "IOC",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.chevron.com/",
+    "ats": {
+      "type": "workday",
+      "host": "chevron.wd5.myworkdayjobs.com",
+      "tenant": "chevron",
+      "site": "jobs"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.chevron.com (Radancy) links to chevron.eightfold.ai, but the Eightfold /api/apply/v2/jobs endpoint returned an HTML page; Workday tenant chevron/jobs returns JSON and is the apply system."
+  },
+  {
+    "id": "totalenergies",
+    "name": "TotalEnergies",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "FR",
+    "careersUrl": "https://jobs.totalenergies.com/en_US/careers/SearchJobs",
+    "ats": {
+      "type": "avature",
+      "host": "jobs.totalenergies.com",
+      "path": "/en_US/careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "Avature. Keyword param is 'search' (not 'keywords') and needs listFilterMode=1: /en_US/careers/SearchJobs?search=safety&listFilterMode=1. Without listFilterMode the keyword is ignored. Job links /en_US/careers/JobDetail/{slug}/{id}; count text 'N results'. ~20 per page."
+  },
+  {
+    "id": "eni",
+    "name": "Eni",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "IT",
+    "careersUrl": "https://jobs.eni.com/en/sites/CX_1004/requisitions",
+    "ats": {
+      "type": "oracle",
+      "host": "fa-evkm-saasfaprod1.fa.ocs.oraclecloud.com",
+      "siteNumber": "CX_1004"
+    },
+    "verified": "2026-10-19",
+    "notes": "Custom domain jobs.eni.com fronts Oracle CE but its /hcmRestApi 302s to an error page; call the API on fa-evkm-saasfaprod1.fa.ocs.oraclecloud.com. Human job URL: https://jobs.eni.com/en/sites/CX_1004/job/{Id}."
+  },
+  {
+    "id": "equinor",
+    "name": "Equinor",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://equinor.wd3.myworkdayjobs.com/EQNR",
+    "ats": {
+      "type": "workday",
+      "host": "equinor.wd3.myworkdayjobs.com",
+      "tenant": "equinor",
+      "site": "EQNR"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "conocophillips",
+    "name": "ConocoPhillips",
+    "category": "IOC",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.conocophillips.com/",
+    "ats": {
+      "type": "workday",
+      "host": "conocophillips.wd1.myworkdayjobs.com",
+      "tenant": "conocophillips",
+      "site": "External"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "occidental",
+    "name": "Occidental (Oxy)",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.oxy.com/careers/",
+    "ats": {
+      "type": "workday",
+      "host": "oxy.wd5.myworkdayjobs.com",
+      "tenant": "oxy",
+      "site": "Corporate"
+    },
+    "verified": "2026-10-19",
+    "notes": "Separate site UniversityRelations for students."
+  },
+  {
+    "id": "apa",
+    "name": "APA Corporation (Apache)",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.apachecorp.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.apachecorp.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF 'Unify' CSB site: /search/ HTML has NO data-rows (JS-rendered). Use POST {baseUrl}/services/recruiting/v1/jobs JSON body {locale:'en_US',pageNumber:0,sortBy:'',keywords:'safety',location:'',facetFilters:{},brand:'',skills:[],categoryId:0,alertId:'',rcmCandidateId:''} -> {totalJobs, jobSearchResult:[{response:{id, unifiedStandardTitle, urlTitle, jobLocationShort[], unifiedStandardStart}}]} (10/page). Job URL {baseUrl}/job/{urlTitle}/{id}-en_US/. Ops incl. Egypt, North Sea, Suriname."
+  },
+  {
+    "id": "santos",
+    "name": "Santos",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "AU",
+    "careersUrl": "https://recruitment.santos.com/careers/SearchJobs",
+    "ats": {
+      "type": "avature",
+      "host": "recruitment.santos.com",
+      "path": "/careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "Avature; /careers/SearchJobs?keywords=safety&listFilterMode=1 works (also 'search='). Graduate portal at /graduateCareers. Job links /careers/JobDetail/{slug}/{id}. Alaska jobs on alaska-santos.isolvedhire.com."
+  },
+  {
+    "id": "repsol",
+    "name": "Repsol",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "ES",
+    "careersUrl": "https://repsol.wd3.myworkdayjobs.com/en-US/Repsol",
+    "ats": {
+      "type": "workday",
+      "host": "repsol.wd3.myworkdayjobs.com",
+      "tenant": "repsol",
+      "site": "Repsol"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "harbour-energy",
+    "name": "Harbour Energy",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://careers.harbourenergy.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.harbourenergy.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML (sapsf.eu DC55). Includes former Wintershall Dea assets (Norway, Germany, Mexico, Argentina...)."
+  },
+  {
+    "id": "aker-bp",
+    "name": "Aker BP",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://akerbp.com/en/career/",
+    "ats": {
+      "type": "html",
+      "url": "https://akerbp.com/en/career/",
+      "linkPattern": "/available-positions/"
+    },
+    "verified": "2026-10-19",
+    "notes": "WordPress page lists open positions as links to /en/available-positions/{slug}/ (only 1 open at check time). No keyword search; filter client-side. Also posts on finn.no/NAV."
+  },
+  {
+    "id": "galp",
+    "name": "Galp",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "PT",
+    "careersUrl": "https://jobs.galp.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "jobs.galp.com (SuccessFactors RMK, /go/Opportunities/1335201/) failed TLS handshake from the research network; likely works as successfactors baseUrl https://jobs.galp.com but unconfirmed."
+    },
+    "verified": ""
+  },
+  {
+    "id": "inpex",
+    "name": "INPEX (Australia)",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "JP",
+    "careersUrl": "https://careers.inpex.com.au/search?searchResultView=LIST&pageNumber=0",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.inpex.com.au"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF Unify site. Use POST {baseUrl}/services/recruiting/v1/jobs with locale 'en_GB' (en_US returns totalJobs:0). Ichthys LNG operator; Japan HQ hires via inpex.co.jp."
+  },
+  {
+    "id": "cenovus",
+    "name": "Cenovus Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://cenovus.wd3.myworkdayjobs.com/careers",
+    "ats": {
+      "type": "workday",
+      "host": "cenovus.wd3.myworkdayjobs.com",
+      "tenant": "cenovus",
+      "site": "careers"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "suncor",
+    "name": "Suncor Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://suncor.wd1.myworkdayjobs.com/Suncor_External",
+    "ats": {
+      "type": "workday",
+      "host": "suncor.wd1.myworkdayjobs.com",
+      "tenant": "suncor",
+      "site": "Suncor_External"
+    },
+    "verified": "2026-10-19",
+    "notes": "suncor.com careers page returns 403 to curl (bot protection); Workday API works."
+  },
+  {
+    "id": "ovintiv",
+    "name": "Ovintiv",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://ovintiv.wd3.myworkdayjobs.com/ovintivcareers",
+    "ats": {
+      "type": "workday",
+      "host": "ovintiv.wd3.myworkdayjobs.com",
+      "tenant": "ovintiv",
+      "site": "ovintivcareers"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "woodside",
+    "name": "Woodside Energy",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "AU",
+    "careersUrl": "https://careers.woodside.com.au/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.woodside.com.au"
+    },
+    "verified": "2026-10-19",
+    "notes": "SF RMK 'tile' layout: /search/?q= page has no tr.data-row; results come from GET {baseUrl}/tile-search-results/?q=safety&startrow=0 (HTML fragment of li.job-tile[data-url] containing a.jobTitle-link). woodside.com returns 403 to curl."
+  },
+  {
+    "id": "tullow",
+    "name": "Tullow Oil",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://careers.tullowoil.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.tullowoil.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML. Jobs mostly Ghana/Kenya."
+  },
+  {
+    "id": "sasol",
+    "name": "Sasol",
+    "category": "Refining / Petrochemicals",
+    "region": "Sub-Saharan Africa",
+    "hq": "ZA",
+    "careersUrl": "https://jobs.sasol.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.sasol.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "RMK /search/ HTML returns 25 data-rows; a.jobTitle-link has extra attributes (class, data-focus-tile, aria-describedby) BEFORE href, so don't regex on class=...\" href= adjacency."
+  },
+  {
+    "id": "omv",
+    "name": "OMV (incl. OMV Petrom)",
+    "category": "IOC",
+    "region": "Europe",
+    "hq": "AT",
+    "careersUrl": "https://careers.omv.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.omv.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML. Brand sub-paths in job links e.g. /Petrom/job/... (Romania) as well as /job/...; build URLs from href as-is."
+  },
+  {
+    "id": "murphy-oil",
+    "name": "Murphy Oil",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://career8.successfactors.com/career?company=MurphyOil&career_ns=job_listing_summary",
+    "ats": {
+      "type": "link-only",
+      "reason": "Legacy SuccessFactors internal career portal (career8.successfactors.com/career?company=MurphyOil), JS-rendered with no RMK /search/ or Unify API."
+    },
+    "verified": ""
+  },
+  {
+    "id": "cnrl",
+    "name": "Canadian Natural Resources (CNRL)",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://www.cnrl.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "cnrl.com returns 403 to non-browser requests; the old cnrl-careers.com domain now points to an unrelated site."
+    },
+    "verified": ""
+  },
+  {
+    "id": "kosmos",
+    "name": "Kosmos Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.kosmosenergy.com/join-the-team/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Openings published as PDF job descriptions on a WordPress page (mixed with many stale PDFs from 2018-2024); no ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "devon-energy",
+    "name": "Devon Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://wd5.myworkdaysite.com/en-US/recruiting/devonenergy/Careers",
+    "ats": {
+      "type": "workday",
+      "host": "devonenergy.wd5.myworkdayjobs.com",
+      "tenant": "devonenergy",
+      "site": "Careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "Company links the myworkdaysite.com variant (https://wd5.myworkdaysite.com/en-US/recruiting/{tenant}/{site}); the CXS API works on BOTH wd5.myworkdaysite.com/wday/cxs/devonenergy/Careers/jobs and devonenergy.wd5.myworkdayjobs.com."
+  },
+  {
+    "id": "eqt",
+    "name": "EQT Corporation",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.eqt.com/careers/",
+    "ats": {
+      "type": "greenhouse",
+      "board": "eqtcorporation"
+    },
+    "verified": "2026-10-19",
+    "notes": "Appalachian gas producer. Greenhouse embed; absolute_url points to job-boards.greenhouse.io."
+  },
+  {
+    "id": "eog-resources",
+    "name": "EOG Resources",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://careers.eogresources.com/process_jobsearch.asp",
+    "ats": {
+      "type": "html",
+      "url": "https://careers.eogresources.com/process_jobsearch.asp",
+      "linkPattern": "jobdetails\\.asp\\?jo_num=\\d+"
+    },
+    "verified": "2026-10-19",
+    "notes": "Custom ASP job list, server-rendered; each job has two links (title + 'Job Details' button) with same jo_num - dedupe. No keyword param; filter client-side."
+  },
+  {
+    "id": "hilcorp",
+    "name": "Hilcorp Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://hec.wd5.myworkdayjobs.com/Hilcorp_Energy_Company",
+    "ats": {
+      "type": "workday",
+      "host": "hec.wd5.myworkdayjobs.com",
+      "tenant": "hec",
+      "site": "Hilcorp_Energy_Company"
+    },
+    "verified": "2026-10-19"
+  },
+  {
+    "id": "petronas",
+    "name": "PETRONAS",
+    "category": "NOC",
+    "region": "Asia-Pacific",
+    "hq": "MY",
+    "careersUrl": "https://careers.petronas.com/en/sites/CX_1",
+    "ats": {
+      "type": "oracle",
+      "host": "epuc.fa.ap1.oraclecloud.com",
+      "siteNumber": "CX_1"
+    },
+    "verified": "2026-10-19",
+    "notes": "careers.petronas.com is a vanity domain for Oracle CE; API host epuc.fa.ap1.oraclecloud.com. Some titles are prefixed with a req number e.g. '100015413_Chargeman (HV)'."
+  },
+  {
+    "id": "pttep",
+    "name": "PTTEP",
+    "category": "NOC",
+    "region": "Asia-Pacific",
+    "hq": "TH",
+    "careersUrl": "https://careers.pttep.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.pttep.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML. pttep.com corporate site is behind ShieldSquare bot protection, but careers.pttep.com is not. Also Malaysia (KL) roles."
+  },
+  {
+    "id": "cnooc-international",
+    "name": "CNOOC International",
+    "category": "NOC",
+    "region": "Asia-Pacific",
+    "hq": "CN",
+    "careersUrl": "https://cnoocinternational.com/careers/currentopportunities/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Cornerstone TalentLink (Lumesse) widget - not a supported ATS type. API works: POST https://emea3.recruitmentplatform.com/fo/rest/jobs?firstResult=0&maxResults=50&sortBy=DPOSTINGSTART&sortOrder=desc, headers username: QRPFK026203F3VBQB6G6GV4SX:guest:FO, password: guest, body {\"searchCriteria\":{\"criteria\":[]}} -> {globals:{jobsCount}, jobs:[{jobFields:{jobTitle,...}, customFields...}]}"
+    },
+    "verified": "",
+    "notes": "Ops in Canada, UK North Sea, Nigeria, Gulf of Mexico etc. 2 jobs at check time. Candidate for a 'talentlink' adapter."
+  },
+  {
+    "id": "ecopetrol",
+    "name": "Ecopetrol",
+    "category": "NOC",
+    "region": "Latin America",
+    "hq": "CO",
+    "careersUrl": "https://jobs.ecopetrol.com.co/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.ecopetrol.com.co"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML (Spanish). Endpoint works but returned 0 vacancies at check time ('no hay ninguna vacante'). Use Spanish keywords (seguridad, ingeniero)."
+  },
+  {
+    "id": "ypf",
+    "name": "YPF",
+    "category": "NOC",
+    "region": "Latin America",
+    "hq": "AR",
+    "careersUrl": "https://trabajar.ypf.com/home.htm",
+    "ats": {
+      "type": "link-only",
+      "reason": "trabajar.ypf.com returns WAF 'Request Rejected' to curl."
+    },
+    "verified": ""
+  },
+  {
+    "id": "petrobras",
+    "name": "Petrobras",
+    "category": "NOC",
+    "region": "Latin America",
+    "hq": "BR",
+    "careersUrl": "https://petrobras.com.br/en/quem-somos/concursos",
+    "ats": {
+      "type": "link-only",
+      "reason": "Hiring in Brazil is via public competitive exams (concursos, run by Cebraspe/Cesgranrio, Brazilian/Portuguese nationals only); no job-board ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "pemex",
+    "name": "Pemex",
+    "category": "NOC",
+    "region": "Latin America",
+    "hq": "MX",
+    "careersUrl": "https://www.pemex.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No public online job board; pemex.com did not respond to scripted requests."
+    },
+    "verified": ""
+  },
+  {
+    "id": "nnpc",
+    "name": "NNPC Limited",
+    "category": "NOC",
+    "region": "Sub-Saharan Africa",
+    "hq": "NG",
+    "careersUrl": "https://careers.nnpcgroup.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "careers.nnpcgroup.com is a client-rendered Next.js app with no discoverable public job API; recruitment is campaign-based."
+    },
+    "verified": ""
+  },
+  {
+    "id": "seplat",
+    "name": "Seplat Energy",
+    "category": "Independent E&P",
+    "region": "Sub-Saharan Africa",
+    "hq": "NG",
+    "careersUrl": "https://www.seplatenergy.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "seplatenergy.com returns 403 (bot protection) to non-browser requests."
+    },
+    "verified": ""
+  },
+  {
+    "id": "ongc",
+    "name": "ONGC",
+    "category": "NOC",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://ongcindia.com/web/eng/careers/recruitment-notice",
+    "ats": {
+      "type": "link-only",
+      "reason": "PSU recruitment via PDF notices / GATE-based campaigns; ongcindia.com did not respond to scripted requests."
+    },
+    "verified": ""
+  },
+  {
+    "id": "ongc-videsh",
+    "name": "ONGC Videsh",
+    "category": "NOC",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://ongcvidesh.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "WordPress page with occasional PDF advertisements (wp-content/uploads/...pdf); no ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "oil-india",
+    "name": "Oil India Limited",
+    "category": "NOC",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://www.oil-india.com/advertisement-list",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recruitment advertisements are opaque PDF download links (/download-advertisement-document?detail=...) with no titles in HTML."
+    },
+    "verified": ""
+  },
+  {
+    "id": "reliance-industries",
+    "name": "Reliance Industries",
+    "category": "Refining / Petrochemicals",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://careers.ril.com/rilcareers/frmJobSearch.aspx",
+    "ats": {
+      "type": "html",
+      "url": "https://careers.ril.com/rilcareers/frmJobSearch.aspx",
+      "linkPattern": "frmJobSearch\\.aspx\\?JBTITLE="
+    },
+    "verified": "2026-10-19",
+    "notes": "ASP.NET grid; GET returns first 10 latest jobs only (further pages are __doPostBack). Anchors are malformed: <a id=MainContent_rgJobs_hylUser_N href=\"frmJobSearch.aspx?JBTITLE=..&jbID=..\" href=\"<title>\">Title ( reqno )</a> - two href attrs, first is the real link; use anchor text as title. Covers Jamnagar refinery, KG-D6 E&P etc."
+  },
+  {
+    "id": "vedanta-cairn",
+    "name": "Cairn Oil & Gas (Vedanta)",
+    "category": "Independent E&P",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://www.vedantaoilandgas.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No public job board found (cairnindia.com redirects to vedantaoilandgas.com whose /careers is 404); hiring via EOI campaigns and LinkedIn."
+    },
+    "verified": ""
+  },
+  {
+    "id": "gail",
+    "name": "GAIL (India)",
+    "category": "LNG / Midstream",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://gailonline.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "PSU recruitment via PDF advertisements under gailonline.com/careers/currentOpnning/; site did not respond reliably to scripted requests."
+    },
+    "verified": ""
+  },
+  {
+    "id": "iocl",
+    "name": "Indian Oil Corporation (IndianOil)",
+    "category": "Refining / Petrochemicals",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://iocl.com/latest-job-opening",
+    "ats": {
+      "type": "link-only",
+      "reason": "iocl.com returns 307 bot-challenge redirects to curl; openings are PDF advertisements."
+    },
+    "verified": ""
+  },
+  {
+    "id": "bpcl",
+    "name": "Bharat Petroleum (BPCL)",
+    "category": "Refining / Petrochemicals",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://www.bharatpetroleum.in/careers/job-openings",
+    "ats": {
+      "type": "link-only",
+      "reason": "Openings are PDF advertisements (/images/files/*.pdf) mixed with results/policy PDFs."
+    },
+    "verified": ""
+  },
+  {
+    "id": "hpcl",
+    "name": "Hindustan Petroleum (HPCL)",
+    "category": "Refining / Petrochemicals",
+    "region": "India",
+    "hq": "IN",
+    "careersUrl": "https://www.hindustanpetroleum.com/job-openings",
+    "ats": {
+      "type": "link-only",
+      "reason": "Openings are PDF advertisements and syllabi (../documents/pdf/*.pdf); no ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "imperial-oil",
+    "name": "Imperial Oil",
+    "category": "IOC",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://jobs.imperialoil.ca/",
+    "ats": {
+      "type": "link-only",
+      "reason": "jobs.imperialoil.ca and imperialoil.ca did not respond / returned 403 to scripted requests. Imperial roles (e.g. Sarnia, Calgary) also appear in the ExxonMobil SuccessFactors feed (jobs.exxonmobil.com, search 'Imperial'), so they are covered there."
+    },
+    "verified": ""
+  },
+  {
+    "id": "var-energi",
+    "name": "Vår Energi",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://varenergi.no/en/career/",
+    "ats": {
+      "type": "link-only",
+      "reason": "varenergi.no returns 403 (bot protection) to non-browser requests; vacancies also syndicated to finn.no and arbeidsplassen.nav.no."
+    },
+    "verified": ""
+  },
+  {
+    "id": "beach-energy",
+    "name": "Beach Energy",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "AU",
+    "careersUrl": "https://careers.beachenergy.com.au/go/View-All-Jobs/3599410/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.beachenergy.com.au"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML. Australia + New Zealand (Taranaki)."
+  },
+  {
+    "id": "origin-energy",
+    "name": "Origin Energy",
+    "category": "LNG / Midstream",
+    "region": "Asia-Pacific",
+    "hq": "AU",
+    "careersUrl": "https://careers.originenergy.com.au/search",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.originenergy.com.au"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML (25 rows/page). Mostly retail/power roles; upstream partner in Australia Pacific LNG."
+  },
+  {
+    "id": "arc-resources",
+    "name": "ARC Resources",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://careers.arcresources.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://careers.arcresources.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML."
+  },
+  {
+    "id": "permian-resources",
+    "name": "Permian Resources",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://permianres.wd12.myworkdayjobs.com/Permian_Resources_Careers",
+    "ats": {
+      "type": "workday",
+      "host": "permianres.wd12.myworkdayjobs.com",
+      "tenant": "permianres",
+      "site": "Permian_Resources_Careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "wd12 data centre."
+  },
+  {
+    "id": "tourmaline",
+    "name": "Tourmaline Oil",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://www.tourmalineoil.com/careers",
+    "ats": {
+      "type": "html",
+      "url": "https://www.tourmalineoil.com/careers",
+      "linkPattern": "^/careers/[a-z0-9-]+$"
+    },
+    "verified": "2026-10-19",
+    "notes": "Server-rendered (Next-style) list of ~28 postings at /careers/{slug}; anchors are empty overlay links (no text) - take the title from a sibling heading or the detail page. Excludes /careers itself. No keyword search."
+  },
+  {
+    "id": "medco-energi",
+    "name": "MedcoEnergi",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "ID",
+    "careersUrl": "https://www.medcoenergi.com/en/career/join-us/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Careers page points only to LinkedIn jobs; no ATS."
+    },
+    "verified": ""
+  },
+  {
+    "id": "pertamina",
+    "name": "Pertamina",
+    "category": "NOC",
+    "region": "Asia-Pacific",
+    "hq": "ID",
+    "careersUrl": "https://recruitment.pertamina.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Recruitment portal is a JS app requiring account login (/Identity/Account/Login) to see vacancies."
+    },
+    "verified": ""
+  },
+  {
+    "id": "sk-innovation",
+    "name": "SK Innovation",
+    "category": "Refining / Petrochemicals",
+    "region": "Asia-Pacific",
+    "hq": "KR",
+    "careersUrl": "https://www.skcareers.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "SK Group shared Korean-language recruiting portal (JS app); no public job API found."
+    },
+    "verified": ""
+  },
+  {
+    "id": "karoon",
+    "name": "Karoon Energy",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "AU",
+    "careersUrl": "https://www.karoonenergy.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "karoonenergy.com returns 403 (bot protection) to non-browser requests. Brazil (Santos Basin) and US Gulf assets."
+    },
+    "verified": ""
+  },
+  {
+    "id": "enquest",
+    "name": "EnQuest",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://enquest.wd3.myworkdayjobs.com/Enquest_Careers",
+    "ats": {
+      "type": "workday",
+      "host": "enquest.wd3.myworkdayjobs.com",
+      "tenant": "enquest",
+      "site": "Enquest_Careers"
+    },
+    "verified": "2026-10-19",
+    "notes": "UK North Sea and Malaysia."
+  },
+  {
+    "id": "ithaca-energy",
+    "name": "Ithaca Energy",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.ithacaenergy.com/careers/apply",
+    "ats": {
+      "type": "html",
+      "url": "https://www.ithacaenergy.com/careers/apply",
+      "linkPattern": "peoplehr\\.net/Pages/JobBoard/Opening\\.aspx\\?v="
+    },
+    "verified": "2026-10-19",
+    "notes": "Page lists PeopleHR job board cards (a.Card, no inline title text on the anchor - title is inside the card markup). Detail pages on ithacaenergyuklimited.peoplehr.net."
+  },
+  {
+    "id": "serica-energy",
+    "name": "Serica Energy",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.serica-energy.com/careers/current-vacancies/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Static CMS page; no job links/ATS visible in HTML (vacancies posted ad hoc)."
+    },
+    "verified": ""
+  },
+  {
+    "id": "dno",
+    "name": "DNO ASA",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.dno.no/en/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "dno.no returns 403 (bot protection) to non-browser requests."
+    },
+    "verified": ""
+  },
+  {
+    "id": "okea",
+    "name": "OKEA",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "NO",
+    "careersUrl": "https://www.okea.no/career/",
+    "ats": {
+      "type": "link-only",
+      "reason": "okea.no returns 403 (bot protection) to non-browser requests."
+    },
+    "verified": ""
+  },
+  {
+    "id": "pan-american-energy",
+    "name": "Pan American Energy",
+    "category": "Independent E&P",
+    "region": "Latin America",
+    "hq": "AR",
+    "careersUrl": "https://jobs.pan-american-energy.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.pan-american-energy.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML, Spanish (use 'seguridad', 'ingeniero'). Argentina (Neuquén, Comodoro Rivadavia), also Mexico/Brazil brands."
+  },
+  {
+    "id": "perenco",
+    "name": "Perenco",
+    "category": "Independent E&P",
+    "region": "Europe",
+    "hq": "GB",
+    "careersUrl": "https://www.perenco.com/job-offers?ref=all",
+    "ats": {
+      "type": "html",
+      "url": "https://perenco-careers.talent-soft.com/offre-de-emploi/liste-toutes-offres.aspx?LCID=2057",
+      "linkPattern": "/job/job-[a-z0-9-]+_\\d+\\.aspx"
+    },
+    "verified": "2026-10-19",
+    "notes": "Talentsoft (Cegid) iframe; full list server-rendered at liste-toutes-offres.aspx (LCID=2057 = English). Also RSS at /job/all-rss-feeds.aspx. Ops in Gabon, Cameroon, Congo, DRC, Tunisia, UK, Brazil, etc."
+  },
+  {
+    "id": "staatsolie",
+    "name": "Staatsolie",
+    "category": "NOC",
+    "region": "Latin America",
+    "hq": "SR",
+    "careersUrl": "https://www.staatsolie.com/en/career/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Legacy SuccessFactors internal career portal (career2.successfactors.eu/career?company=staatsolieP4), JS-rendered, no RMK site or API."
+    },
+    "verified": ""
+  },
+  {
+    "id": "petroperu",
+    "name": "Petroperú",
+    "category": "NOC",
+    "region": "Latin America",
+    "hq": "PE",
+    "careersUrl": "https://bolsa.petroperu.com.pe/",
+    "ats": {
+      "type": "link-only",
+      "reason": "bolsa.petroperu.com.pe is a client-rendered JS app (3.5KB shell); no public job API found."
+    },
+    "verified": ""
+  },
+  {
+    "id": "expand-energy",
+    "name": "Expand Energy (Chesapeake + Southwestern)",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://jobs.expandenergy.com/",
+    "ats": {
+      "type": "successfactors",
+      "baseUrl": "https://jobs.expandenergy.com"
+    },
+    "verified": "2026-10-19",
+    "notes": "Classic RMK HTML (25 rows/page). expandenergy.com itself timed out from curl."
+  },
+  {
+    "id": "diamondback-energy",
+    "name": "Diamondback Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.diamondbackenergy.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "Workday tenant diamondbackenergy on wd12 exists (CXS returns S21 'site not found' rather than unknown tenant) but the external site name could not be confirmed; diamondbackenergy.com timed out."
+    },
+    "verified": ""
+  },
+  {
+    "id": "coterra",
+    "name": "Coterra Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.coterra.com/",
+    "ats": {
+      "type": "link-only",
+      "reason": "No careers link/ATS found in coterra.com HTML (careers page 404); jobs seen only on third-party boards."
+    },
+    "verified": ""
+  },
+  {
+    "id": "talos-energy",
+    "name": "Talos Energy",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "US",
+    "careersUrl": "https://www.talosenergy.com/careers",
+    "ats": {
+      "type": "link-only",
+      "reason": "talosenergy.com returns 403 (bot protection) to non-browser requests. US Gulf of America and Mexico offshore."
+    },
+    "verified": ""
+  },
+  {
+    "id": "japex",
+    "name": "JAPEX",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "JP",
+    "careersUrl": "https://www.japex.co.jp/en/recruit/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Japanese-language recruitment pages (/recruit/, /recruit/global/) with campaign-style hiring; no ATS feed."
+    },
+    "verified": ""
+  },
+  {
+    "id": "parex-resources",
+    "name": "Parex Resources",
+    "category": "Independent E&P",
+    "region": "Latin America",
+    "hq": "CA",
+    "careersUrl": "https://www.parexresources.com/careers/current-opportunities/",
+    "ats": {
+      "type": "link-only",
+      "reason": "Current-opportunities page has no job links or ATS references in server HTML. Colombia operations."
+    },
+    "verified": ""
+  },
+  {
+    "id": "whitecap",
+    "name": "Whitecap Resources",
+    "category": "Independent E&P",
+    "region": "North America",
+    "hq": "CA",
+    "careersUrl": "https://www.whitecap.com/careers/",
+    "ats": {
+      "type": "link-only",
+      "reason": "whitecap.com returns 403 (bot protection) to non-browser requests."
+    },
+    "verified": ""
+  },
+  {
+    "id": "hibiscus-petroleum",
+    "name": "Hibiscus Petroleum",
+    "category": "Independent E&P",
+    "region": "Asia-Pacific",
+    "hq": "MY",
+    "careersUrl": "https://www.hibiscuspetroleum.com/careers/",
+    "ats": {
+      "type": "html",
+      "url": "https://www.hibiscuspetroleum.com/careers/",
+      "linkPattern": "/submit-your-resume-[a-z-]+\\?position-name="
+    },
+    "verified": "2026-10-19",
+    "notes": "No ATS; each opening is a link to a resume form with the job title in the position-name query param (e.g. /submit-your-resume-brunei?position-name=Maintenance Lead). Dedupe; title = decoded param. Malaysia, Brunei, UK North Sea (Anasuria)."
+  }
+]

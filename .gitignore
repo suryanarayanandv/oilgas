@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# personal documents (e.g. resumes) must never be published with the site
+*.pdf
+*.docx

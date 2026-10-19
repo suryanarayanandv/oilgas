@@ -1,0 +1,113 @@
+{
+  "$comment": "searchTerms are sent to each ATS search box. patterns are matched (case-insensitive, word boundaries) against job titles. A title scoring >= coreScore is a core technical-safety role; >= relatedScore is kept as related; lower is dropped.",
+  "searchTerms": [
+    "safety",
+    "HSE",
+    "loss prevention",
+    "HAZOP"
+  ],
+  "coreScore": 7,
+  "relatedScore": 2,
+  "patterns": [
+    {
+      "re": "technical safety",
+      "w": 10
+    },
+    {
+      "re": "process safety",
+      "w": 10
+    },
+    {
+      "re": "loss prevention",
+      "w": 9
+    },
+    {
+      "re": "functional safety",
+      "w": 9
+    },
+    {
+      "re": "fire (and|&) gas|\\bF&G\\b",
+      "w": 8
+    },
+    {
+      "re": "safety (engineer|engineering)",
+      "w": 8
+    },
+    {
+      "re": "safety case",
+      "w": 8
+    },
+    {
+      "re": "safety integrity|\\bSIL\\b|\\bSIS\\b",
+      "w": 7
+    },
+    {
+      "re": "\\bHAZOP\\b|\\bHAZID\\b|\\bQRA\\b|\\bLOPA\\b|\\bPHA\\b",
+      "w": 7
+    },
+    {
+      "re": "risk (engineer|analyst|consultant|specialist)",
+      "w": 5
+    },
+    {
+      "re": "fire (protection|engineer|safety)",
+      "w": 5
+    },
+    {
+      "re": "major accident|\\bMAH\\b|\\bCOMAH\\b",
+      "w": 6
+    },
+    {
+      "re": "(HSE|HSSE|QHSE|EHS|HS&E) (engineer|lead|manager|specialist)",
+      "w": 4
+    },
+    {
+      "re": "safety (lead|specialist|consultant|manager|superintendent)",
+      "w": 4
+    },
+    {
+      "re": "asset integrity|technical integrity",
+      "w": 3
+    },
+    {
+      "re": "\\bHSE\\b|\\bHSSE\\b|\\bQHSE\\b|\\bEHS\\b|\\bHS&E\\b",
+      "w": 2
+    },
+    {
+      "re": "s[ée]curit[ée] (des )?proc[ée]d[ée]s|seguridad de (los )?procesos|seguran[çc]a de processos|prosessikkerhet|prozesssicherheit|anlagensicherheit",
+      "w": 10
+    },
+    {
+      "re": "teknisk sikkerhet|sicherheitsingenieur",
+      "w": 10
+    },
+    {
+      "re": "ing[ée]nieur.{0,25}s[ée]curit[ée]|ingenier[oa] de seguridad|engenheir[oa] de seguran[çc]a|sikkerhetsingeni[øo]r",
+      "w": 8
+    },
+    {
+      "re": "s[ée]curit[ée]|seguridad|seguran[çc]a|sikkerhet|sicherheit",
+      "w": 2
+    },
+    {
+      "re": "safety",
+      "w": 2
+    }
+  ],
+  "exclude": [
+    "food safety",
+    "patient safety",
+    "drug safety",
+    "pharmacovigilance",
+    "clinical",
+    "cyber",
+    "information security",
+    "data protection",
+    "product safety officer",
+    "nurse",
+    "sécurité sociale",
+    "it security",
+    "security guard",
+    "security officer"
+  ]
+}
